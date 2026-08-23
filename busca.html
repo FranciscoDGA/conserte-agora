@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca | Conserte Agora</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">Conserte<span>Agora</span></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="categorias/consertos-domesticos.html">Consertos Domésticos</a></li>
+                    <li><a href="categorias/limpeza-e-manutencao.html">Limpeza</a></li>
+                    <li><a href="categorias/organizacao-de-espacos.html">Organização</a></li>
+                    <li><a href="categorias/produtos-e-ferramentas.html">Ferramentas</a></li>
+                    <li><a href="categorias/dicas-rapidas.html">Dicas Rápidas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="article-container" style="text-align: center; padding: 5rem 2rem;">
+        
+<h1>Resultados da Busca</h1>
+<div id="search-results" style="text-align: left; margin-top: 2rem;">
+    <p>Buscando...</p>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const query = urlParams.get('q');
+        const resultsDiv = document.getElementById('search-results');
+        
+        if (!query) {
+            resultsDiv.innerHTML = '<p>Digite algo para buscar.</p>';
+            return;
+        }
+        
+        fetch('search.json')
+            .then(res => res.json())
+            .then(data => {
+                const results = data.filter(item => 
+                    item.title.toLowerCase().includes(query.toLowerCase()) || 
+                    item.desc.toLowerCase().includes(query.toLowerCase())
+                );
+                
+                if (results.length === 0) {
+                    resultsDiv.innerHTML = '<p>Nenhum resultado encontrado para "'+query+'".</p>';
+                    return;
+                }
+                
+                let html = '<ul style="list-style: none; padding: 0;">';
+                results.forEach(item => {
+                    html += `<li style="margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid #eee;">
+                        <a href="${item.url}" style="font-size: 1.2rem; font-weight: bold; color: var(--primary-color);">${item.title}</a>
+                        <p style="color: var(--light-text); margin-top: 0.5rem;">${item.desc}</p>
+                    </li>`;
+                });
+                html += '</ul>';
+                resultsDiv.innerHTML = html;
+            });
+    });
+</script>
+
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
