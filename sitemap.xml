@@ -1,165 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.conserteagora.com.br/404.html</loc>
+    <loc>https://conserte-agora.vercel.app/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.conserteagora.com.br/autor.html</loc>
+    <loc>https://conserte-agora.vercel.app/categorias/consertos-domesticos.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.conserteagora.com.br/busca.html</loc>
+    <loc>https://conserte-agora.vercel.app/categorias/limpeza-e-manutencao.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.conserteagora.com.br/contato.html</loc>
+    <loc>https://conserte-agora.vercel.app/categorias/ferramentas.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.conserteagora.com.br/index.html</loc>
+    <loc>https://conserte-agora.vercel.app/artigos/como-consertar-fechadura-de-porta.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.conserteagora.com.br/politica-de-cookies.html</loc>
+    <loc>https://conserte-agora.vercel.app/artigos/desentupir-pia-sem-soda-caustica.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.conserteagora.com.br/politica-de-privacidade.html</loc>
+    <loc>https://conserte-agora.vercel.app/artigos/tirar-mofo-das-paredes-solucoes.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.conserteagora.com.br/sobre.html</loc>
+    <loc>https://conserte-agora.vercel.app/artigos/10-ferramentas-essenciais-para-ter-em-casa.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.conserteagora.com.br/termos-de-uso.html</loc>
+    <loc>https://conserte-agora.vercel.app/sobre.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://www.conserteagora.com.br/categorias/consertos-domesticos.html</loc>
+    <loc>https://conserte-agora.vercel.app/autor.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://www.conserteagora.com.br/categorias/dicas-rapidas.html</loc>
+    <loc>https://conserte-agora.vercel.app/contato.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://www.conserteagora.com.br/categorias/limpeza-e-manutencao.html</loc>
+    <loc>https://conserte-agora.vercel.app/busca.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://www.conserteagora.com.br/categorias/organizacao-de-espacos.html</loc>
+    <loc>https://conserte-agora.vercel.app/politica-de-privacidade.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.conserteagora.com.br/categorias/produtos-e-ferramentas.html</loc>
+    <loc>https://conserte-agora.vercel.app/politica-de-cookies.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-01.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-02.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-03.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-04.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-05.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-06.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-07.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-08.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-09.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-10.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-11.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-12.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-13.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-14.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-15.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-16.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-17.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-18.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-19.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-20.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-21.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-22.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-23.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-24.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-25.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-26.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-27.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-28.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-29.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-30.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-31.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-32.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-33.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-34.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-35.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-36.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-37.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-38.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-39.html</loc>
-  </url>
-  <url>
-    <loc>https://www.conserteagora.com.br/artigos/artigo-40.html</loc>
+    <loc>https://conserte-agora.vercel.app/termos-de-uso.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>

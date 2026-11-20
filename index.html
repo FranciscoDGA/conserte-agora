@@ -4,11 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conserte Agora - Soluções Práticas para Problemas Domésticos</title>
-    <meta name="description" content="O Conserte Agora ensina consertos e soluções práticas domésticas para pessoas comuns, com guias passo a passo, limpeza, organização e ferramentas.">
+    <meta name="description" content="O Conserte Agora ensina consertos e soluções práticas domésticas para pessoas comuns, com guias passo a passo, limpeza, manutenção e ferramentas.">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="canonical" href="https://www.conserteagora.com.br/">
-    <!-- SEO and Schema to be injected dynamically or statically -->
+    <link rel="canonical" href="https://conserte-agora.vercel.app/">
+    <meta property="og:title" content="Conserte Agora - Soluções Práticas para Problemas Domésticos">
+    <meta property="og:description" content="Guias passo a passo de reparos domésticos, limpeza de casa e ferramentas essenciais para resolver problemas sem complicações.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://conserte-agora.vercel.app/">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Conserte Agora">
+    <meta property="og:image" content="https://conserte-agora.vercel.app/imagens/artigos/fechadura_capa.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Conserte Agora - Soluções Práticas para Problemas Domésticos">
+    <meta name="twitter:description" content="Guias passo a passo de reparos domésticos, limpeza e ferramentas essenciais.">
+    <meta name="twitter:image" content="https://conserte-agora.vercel.app/imagens/artigos/fechadura_capa.jpg">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "Conserte Agora",
+          "url": "https://conserte-agora.vercel.app",
+          "logo": "https://conserte-agora.vercel.app/apple-touch-icon.png"
+        },
+        {
+          "@type": "WebSite",
+          "name": "Conserte Agora",
+          "url": "https://conserte-agora.vercel.app",
+          "inLanguage": "pt-BR",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://conserte-agora.vercel.app/busca.html?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -16,14 +52,13 @@
             <div class="logo">
                 <a href="index.html">Conserte<span>Agora</span></a>
             </div>
-            <nav class="main-nav">
+            <nav class="main-nav" aria-label="Menu principal">
                 <ul>
                     <li><a href="index.html">Início</a></li>
                     <li><a href="categorias/consertos-domesticos.html">Consertos Domésticos</a></li>
                     <li><a href="categorias/limpeza-e-manutencao.html">Limpeza</a></li>
-                    <li><a href="categorias/organizacao-de-espacos.html">Organização</a></li>
-                    <li><a href="categorias/produtos-e-ferramentas.html">Ferramentas</a></li>
-                    <li><a href="categorias/dicas-rapidas.html">Dicas Rápidas</a></li>
+                    <li><a href="categorias/ferramentas.html">Ferramentas</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
                 </ul>
             </nav>
             <div class="search-bar">
@@ -33,10 +68,12 @@
     </header>
 
     <main>
+        <h1 style="font-size: clamp(1.75rem, 3vw, 2.35rem); color: var(--primary-color); margin-bottom: 1.5rem; line-height: 1.25;">Guias Práticos de Reparos Domésticos e Manutenção</h1>
+
         <section class="hero">
             <div class="main-featured">
-                <a href="artigos/artigo-01.html">
-                    <img src="imagens/artigos/fechadura_capa.jpg" alt="Como consertar fechadura de porta">
+                <a href="artigos/como-consertar-fechadura-de-porta.html">
+                    <img src="imagens/artigos/fechadura_capa.jpg" alt="Como consertar fechadura de porta sem serralheiro" width="800" height="450">
                     <div class="featured-content">
                         <span class="category-tag">Consertos Domésticos</span>
                         <h2>Como consertar fechadura de porta sem serralheiro: guia passo a passo</h2>
@@ -45,24 +82,24 @@
             </div>
             <div class="secondary-featured">
                 <div class="card-small">
-                    <img src="imagens/artigos/pia_entupida.jpg" alt="Desentupir Pia">
+                    <img src="imagens/artigos/pia_entupida.jpg" alt="5 maneiras de desentupir pia sem soda cáustica" width="400" height="250" loading="lazy">
                     <div class="card-small-content">
-                        <a href="artigos/artigo-02.html"><h3>5 maneiras de desentupir pia sem soda cáustica</h3></a>
+                        <a href="artigos/desentupir-pia-sem-soda-caustica.html"><h3>5 maneiras de desentupir pia sem soda cáustica</h3></a>
                         <span class="category-tag">Consertos Domésticos</span>
                     </div>
                 </div>
                 <div class="card-small">
-                    <img src="imagens/artigos/tirar_mofo.jpg" alt="Tirar Mofo">
+                    <img src="imagens/artigos/tirar_mofo.jpg" alt="Como tirar mofo das paredes de forma definitiva" width="400" height="250" loading="lazy">
                     <div class="card-small-content">
-                        <a href="artigos/artigo-09.html"><h3>Como tirar mofo das paredes: soluções caseiras</h3></a>
-                        <span class="category-tag">Limpeza</span>
+                        <a href="artigos/tirar-mofo-das-paredes-solucoes.html"><h3>Como tirar mofo das paredes: soluções caseiras</h3></a>
+                        <span class="category-tag">Limpeza e Manutenção</span>
                     </div>
                 </div>
                 <div class="card-small">
-                    <img src="imagens/artigos/cozinha_pequena.jpg" alt="Cozinha Pequena">
+                    <img src="imagens/artigos/ferramentas_basicas.jpg" alt="10 ferramentas básicas que todo mundo precisa ter em casa" width="400" height="250" loading="lazy">
                     <div class="card-small-content">
-                        <a href="artigos/artigo-17.html"><h3>Como organizar uma cozinha de 6m² com orçamento baixo</h3></a>
-                        <span class="category-tag">Organização</span>
+                        <a href="artigos/10-ferramentas-essenciais-para-ter-em-casa.html"><h3>10 ferramentas essenciais para ter em casa</h3></a>
+                        <span class="category-tag">Ferramentas</span>
                     </div>
                 </div>
             </div>
@@ -70,46 +107,52 @@
 
         <section class="home-categories">
             <h2 class="section-title">Navegue por Categorias</h2>
-            <div class="article-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));">
+            <div class="article-grid" style="grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));">
                 <a href="categorias/consertos-domesticos.html" class="card" style="text-align: center; padding: 2rem;">
                     <h3>🔧 Consertos Domésticos</h3>
                 </a>
                 <a href="categorias/limpeza-e-manutencao.html" class="card" style="text-align: center; padding: 2rem;">
                     <h3>🧹 Limpeza e Manutenção</h3>
                 </a>
-                <a href="categorias/organizacao-de-espacos.html" class="card" style="text-align: center; padding: 2rem;">
-                    <h3>📦 Organização de Espaços</h3>
-                </a>
-                <a href="categorias/produtos-e-ferramentas.html" class="card" style="text-align: center; padding: 2rem;">
+                <a href="categorias/ferramentas.html" class="card" style="text-align: center; padding: 2rem;">
                     <h3>🛠️ Ferramentas</h3>
                 </a>
             </div>
         </section>
+
         <section class="latest-articles" style="margin-top: 4rem;">
             <h2 class="section-title">Últimos Artigos</h2>
             <div class="article-grid">
-                <a href="artigos/artigo-03.html" class="card">
-                    <img src="imagens/artigos/cadeira_balanca.jpg" alt="Cadeira que balança">
+                <a href="artigos/como-consertar-fechadura-de-porta.html" class="card">
+                    <img src="imagens/artigos/fechadura_capa.jpg" alt="Como consertar fechadura de porta sem serralheiro" width="800" height="450" loading="lazy">
                     <div class="card-content">
                         <span class="category-tag">Consertos Domésticos</span>
-                        <h3>Como arrumar cadeira de madeira que balança</h3>
-                        <p>Dicas simples para estabilizar sua cadeira antiga e evitar acidentes.</p>
+                        <h3>Como consertar fechadura de porta sem serralheiro</h3>
+                        <p>Aprenda a lubrificar, alinhar e apertar fechaduras emperradas ou frouxas em minutos.</p>
                     </div>
                 </a>
-                <a href="artigos/artigo-04.html" class="card">
-                    <img src="imagens/artigos/cheiro_queimado.jpg" alt="Cheiro de queimado no microondas">
+                <a href="artigos/desentupir-pia-sem-soda-caustica.html" class="card">
+                    <img src="imagens/artigos/pia_entupida.jpg" alt="Desentupir pia sem soda cáustica" width="800" height="450" loading="lazy">
                     <div class="card-content">
                         <span class="category-tag">Consertos Domésticos</span>
-                        <h3>Micro-ondas com cheiro de queimado? Veja o que fazer</h3>
-                        <p>Descubra as causas comuns e como resolver esse problema sem perigo.</p>
+                        <h3>5 maneiras de desentupir pia sem soda cáustica</h3>
+                        <p>Métodos caseiros seguros e econômicos para desobstruir o encanamento sem danificar os canos.</p>
                     </div>
                 </a>
-                <a href="artigos/artigo-05.html" class="card">
-                    <img src="imagens/artigos/ferramentas_basicas.jpg" alt="Ferramentas Básicas">
+                <a href="artigos/tirar-mofo-das-paredes-solucoes.html" class="card">
+                    <img src="imagens/artigos/tirar_mofo.jpg" alt="Tirar mofo das paredes com soluções caseiras" width="800" height="450" loading="lazy">
+                    <div class="card-content">
+                        <span class="category-tag">Limpeza e Manutenção</span>
+                        <h3>Como tirar mofo das paredes de forma definitiva</h3>
+                        <p>Passo a passo com vinagre branco e água sanitária diluída para eliminar fungos e umidade.</p>
+                    </div>
+                </a>
+                <a href="artigos/10-ferramentas-essenciais-para-ter-em-casa.html" class="card">
+                    <img src="imagens/artigos/ferramentas_basicas.jpg" alt="10 ferramentas básicas para ter em casa" width="800" height="450" loading="lazy">
                     <div class="card-content">
                         <span class="category-tag">Ferramentas</span>
                         <h3>10 ferramentas essenciais para se ter em casa</h3>
-                        <p>Monte seu kit básico de sobrevivência para reparos domésticos rápidos.</p>
+                        <p>Monte seu kit básico de sobrevivência para pequenos reparos domésticos rápidos.</p>
                     </div>
                 </a>
             </div>
@@ -163,7 +206,3 @@
     <script src="js/main.js"></script>
 </body>
 </html>
-
-
-
-

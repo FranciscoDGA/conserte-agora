@@ -1,0 +1,32 @@
+# Conserte Agora
+
+> Guias passo a passo de reparos domésticos, hidráulica, fechaduras, elétrica e manutenção residencial.
+
+Portal brasileiro de faça-você-mesmo (DIY) e manutenção doméstica com tutoriais práticos para desentupir pia, tirar mofo, consertar fechaduras e escolher ferramentas essenciais. Domínio canônico: https://conserte-agora.vercel.app.
+
+## Páginas Principais
+
+- [Página Inicial](https://conserte-agora.vercel.app/): Reparos domésticos, limpeza e ferramentas para resolver problemas em casa sem complicação.
+- [Busca](https://conserte-agora.vercel.app/busca.html): Pesquisa interna de tutoriais e soluções domésticas.
+
+## Categorias
+
+- [Consertos Domésticos](https://conserte-agora.vercel.app/categorias/consertos-domesticos.html): Guias passo a passo de manutenção em portas, fechaduras e pias.
+- [Limpeza e Manutenção](https://conserte-agora.vercel.app/categorias/limpeza-e-manutencao.html): Soluções caseiras seguras contra mofo e umidade.
+- [Ferramentas](https://conserte-agora.vercel.app/categorias/ferramentas.html): Guias sobre ferramentas básicas e kit residencial.
+
+## Tutoriais e Consertos Domésticos
+
+- [Como consertar fechadura de porta sem serralheiro](https://conserte-agora.vercel.app/artigos/como-consertar-fechadura-de-porta.html): Lubrificação correta com grafite, aperto de maçaneta e alinhamento de trinco.
+- [5 maneiras de desentupir pia sem soda cáustica](https://conserte-agora.vercel.app/artigos/desentupir-pia-sem-soda-caustica.html): Métodos caseiros seguros sem corroer tubulações.
+- [Como tirar mofo das paredes de forma definitiva](https://conserte-agora.vercel.app/artigos/tirar-mofo-das-paredes-solucoes.html): Tratamento eficaz contra bolor com prevenção de retorno.
+- [10 ferramentas básicas que todo mundo precisa ter em casa](https://conserte-agora.vercel.app/artigos/10-ferramentas-essenciais-para-ter-em-casa.html): Kit essencial para reparos domésticos rápidos.
+
+## Optional
+
+- [Sobre Nós](https://conserte-agora.vercel.app/sobre.html)
+- [Equipe Editorial](https://conserte-agora.vercel.app/autor.html)
+- [Contato](https://conserte-agora.vercel.app/contato.html)
+- [Política de Privacidade](https://conserte-agora.vercel.app/politica-de-privacidade.html)
+- [Política de Cookies](https://conserte-agora.vercel.app/politica-de-cookies.html)
+- [Termos de Uso](https://conserte-agora.vercel.app/termos-de-uso.html)
