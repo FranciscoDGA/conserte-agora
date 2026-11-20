@@ -17,6 +17,7 @@ Portal brasileiro de faça-você-mesmo (DIY) e manutenção doméstica com tutor
 
 ## Tutoriais e Consertos Domésticos
 
+- [Máquina de Lavar Não Centrifuga? 7 Causas e Como Testar](https://conserte-agora.vercel.app/artigos/maquina-de-lavar-nao-centrifuga-o-que-fazer.html): Diagnóstico por sintoma (filtro, drenagem, sensor da tampa, correia e atuador) com avisos de segurança.
 - [Como consertar fechadura de porta sem serralheiro](https://conserte-agora.vercel.app/artigos/como-consertar-fechadura-de-porta.html): Lubrificação correta com grafite, aperto de maçaneta e alinhamento de trinco.
 - [5 maneiras de desentupir pia sem soda cáustica](https://conserte-agora.vercel.app/artigos/desentupir-pia-sem-soda-caustica.html): Métodos caseiros seguros sem corroer tubulações.
 - [Como tirar mofo das paredes de forma definitiva](https://conserte-agora.vercel.app/artigos/tirar-mofo-das-paredes-solucoes.html): Tratamento eficaz contra bolor com prevenção de retorno.
