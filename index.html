@@ -7,6 +7,9 @@
     <meta name="description" content="O Conserte Agora ensina consertos e soluções práticas domésticas para pessoas comuns, com guias passo a passo, limpeza, manutenção e ferramentas.">
     <link rel="icon" type="image/png" sizes="96x96" href="favicon-96.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="canonical" href="https://conserte-agora.vercel.app/">
@@ -68,7 +71,10 @@
     </header>
 
     <main>
-        <h1 style="font-size: clamp(1.75rem, 3vw, 2.35rem); color: var(--primary-color); margin-bottom: 1.5rem; line-height: 1.25;">Guias Práticos de Reparos Domésticos e Manutenção</h1>
+        <div class="home-hero-header">
+            <h1>Guias Práticos de Reparos Domésticos e Manutenção</h1>
+            <p class="home-hero-subtitle">Tutoriais passo a passo, seguros e econômicos para resolver problemas de casa sem complicações.</p>
+        </div>
 
         <section class="hero">
             <div class="main-featured">
@@ -107,15 +113,18 @@
 
         <section class="home-categories">
             <h2 class="section-title">Navegue por Categorias</h2>
-            <div class="article-grid" style="grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));">
-                <a href="categorias/consertos-domesticos.html" class="card" style="text-align: center; padding: 2rem;">
+            <div class="category-grid">
+                <a href="categorias/consertos-domesticos.html" class="category-card">
                     <h3>🔧 Consertos Domésticos</h3>
+                    <p>Eletrodomésticos, elétrica, hidráulica e fechaduras</p>
                 </a>
-                <a href="categorias/limpeza-e-manutencao.html" class="card" style="text-align: center; padding: 2rem;">
+                <a href="categorias/limpeza-e-manutencao.html" class="category-card">
                     <h3>🧹 Limpeza e Manutenção</h3>
+                    <p>Soluções caseiras contra mofo, manchas e conservação</p>
                 </a>
-                <a href="categorias/ferramentas.html" class="card" style="text-align: center; padding: 2rem;">
+                <a href="categorias/ferramentas.html" class="category-card">
                     <h3>🛠️ Ferramentas</h3>
+                    <p>Guias de escolha e uso das ferramentas essenciais</p>
                 </a>
             </div>
         </section>
