@@ -17,6 +17,7 @@ Portal brasileiro de faça-você-mesmo (DIY) e manutenção doméstica com tutor
 
 ## Tutoriais e Consertos Domésticos
 
+- [Geladeira Consul Não Gela a Parte de Baixo: O Que Fazer Passo a Passo](https://conserte-agora.vercel.app/artigos/geladeira-consul-nao-gela-parte-de-baixo-o-que-fazer.html): Guia completo com 7 causas (duto congelado, damper, borracha, ventilador, sensor/resistência e gás), degelo de 24h e tabela de diagnóstico.
 - [Máquina de Lavar Não Centrifuga? 7 Causas e Como Testar](https://conserte-agora.vercel.app/artigos/maquina-de-lavar-nao-centrifuga-o-que-fazer.html): Diagnóstico por sintoma (filtro, drenagem, sensor da tampa, correia e atuador) com avisos de segurança.
 - [Como consertar fechadura de porta sem serralheiro](https://conserte-agora.vercel.app/artigos/como-consertar-fechadura-de-porta.html): Lubrificação correta com grafite, aperto de maçaneta e alinhamento de trinco.
 - [5 maneiras de desentupir pia sem soda cáustica](https://conserte-agora.vercel.app/artigos/desentupir-pia-sem-soda-caustica.html): Métodos caseiros seguros sem corroer tubulações.
