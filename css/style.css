@@ -614,6 +614,14 @@ main.article-container {
   text-decoration: underline;
 }
 
+.article-content a.btn-primary,
+.article-content a.btn-secondary,
+.article-content a.btn-primary:hover,
+.article-content a.btn-secondary:hover {
+  color: var(--white);
+  text-decoration: none;
+}
+
 .article-content .card,
 .article-content .card:hover {
   text-decoration: none;
