@@ -18,6 +18,9 @@ Portal brasileiro de manutenção doméstica básica com foco em segurança para
 
 ## Guias Revisados
 
+- [Porta rangendo ou raspando: como lubrificar e ajustar dobradiças com segurança](https://conserte-agora.vercel.app/artigos/como-tirar-rangido-de-porta-e-ajustar-dobradica.html): Como eliminar rangidos nas dobradiças sem sujar a madeira, reapertar parafusos folgados e quando chamar marceneiro.
+- [Como limpar quintal, calçada com limo e ralos externos para evitar infiltração](https://conserte-agora.vercel.app/artigos/como-limpar-quintal-e-calha-com-seguranca.html): Remoção segura de limo em calçadas, limpeza de grelhas de ralos pluviais de piso e prevenção de umidade no rodapé.
+- [Como escolher parafusadeira e kit de ferramentas para casa (móveis, armários e gavetas)](https://conserte-agora.vercel.app/artigos/como-escolher-parafusadeira-e-kit-de-ferramentas-para-casa.html): Uso de controle de torque e chaves adequadas para regular gavetas travando, portas de armário e móveis em MDF.
 - [Geladeira Consul não gela a parte de baixo: causas comuns e o que verificar com segurança](https://conserte-agora.vercel.app/artigos/geladeira-consul-nao-gela-parte-de-baixo-o-que-fazer.html): Verificações externas seguras (saídas de ar, controle, borracha e degelo natural de 24h) e quando chamar técnico.
 - [Máquina de lavar não centrifuga: causas comuns e o que verificar com segurança](https://conserte-agora.vercel.app/artigos/maquina-de-lavar-nao-centrifuga-o-que-fazer.html): O que checar fora da tomada (carga, painel, mangueira e filtro) e sinais que exigem assistência técnica.
 - [Como ajustar fechadura de porta: lubrificação, maçaneta frouxa e alinhamento básico](https://conserte-agora.vercel.app/artigos/como-consertar-fechadura-de-porta.html): Lubrificação a seco com grafite em pó, reaperto de maçaneta e dobradiça superior e quando chamar chaveiro.

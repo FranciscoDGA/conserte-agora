@@ -51,6 +51,8 @@
 </head>
 <body>
     <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+    <!-- 1. Cabeçalho -->
     <header>
         <div class="header-container">
             <div class="logo">
@@ -73,71 +75,140 @@
     </header>
 
     <main id="conteudo-principal">
-        <!-- 1 & 2. Chamada Principal + Busca Funcional + Filtros por Problema, Ambiente e Objeto -->
-        <section class="home-search-hero" aria-labelledby="hero-heading">
-            <div class="home-search-hero-inner">
-                <span class="hero-eyebrow">Manutenção básica com clareza e segurança</span>
-                <h1 id="hero-heading">Qual problema você precisa resolver?</h1>
-                <p class="home-hero-subtitle">
-                    Ajudamos você a identificar pequenos problemas em casa, no trabalho e em outros ambientes, entender o que pode ser verificado com segurança e saber quando procurar um profissional.
-                </p>
+        <h1 class="sr-only">Conserte Agora — Guias Práticos de Manutenção e Reparos Domésticos com Segurança</h1>
 
-                <form action="busca.html" method="GET" class="home-hero-search-form" role="search">
-                    <label for="homeHeroSearchInput" class="sr-only">Descreva o problema, ambiente ou objeto</label>
-                    <input
-                        type="search"
-                        id="homeHeroSearchInput"
-                        name="q"
-                        placeholder="Ex.: pia entupida, fechadura agarrando, geladeira não gela, mofo..."
-                        aria-label="Descreva o problema, ambiente ou objeto que você precisa resolver"
-                        autocomplete="off"
-                        required
-                    >
-                    <button type="submit" class="btn btn-secondary">Buscar orientação</button>
-                </form>
-
-                <div class="home-search-facets" aria-label="Atalhos de busca por problema, ambiente e objeto">
-                    <div class="facet-group">
-                        <span class="facet-label">Por problema:</span>
-                        <div class="facet-chips">
-                            <a href="busca.html?q=pia+entupida" class="facet-chip">pia entupida</a>
-                            <a href="busca.html?q=porta+rangendo" class="facet-chip">porta rangendo</a>
-                            <a href="busca.html?q=fechadura+agarrando" class="facet-chip">fechadura agarrando</a>
-                            <a href="busca.html?q=geladeira+nao+gela+embaixo" class="facet-chip">geladeira não gela embaixo</a>
-                            <a href="busca.html?q=maquina+nao+centrifuga" class="facet-chip">máquina não centrifuga</a>
-                            <a href="busca.html?q=mofo+na+parede" class="facet-chip">mofo na parede</a>
-                            <a href="busca.html?q=gaveta+travando" class="facet-chip">gaveta travando</a>
+        <!-- 2. Destaque visual com imagem real e navegação manual (sem autoplay) -->
+        <section class="hero-editorial-carousel" id="heroCarousel" aria-roledescription="carousel" aria-label="Guias em destaque">
+            <div class="hero-slides-viewport">
+                <!-- Destaque 1 (visível por padrão mesmo sem JS) -->
+                <article class="hero-slide is-active" data-slide-index="0" aria-roledescription="slide" aria-label="1 de 3: Geladeira Consul não gela a parte de baixo">
+                    <img src="imagens/geladeira-consul-nao-gela-parte-de-baixo.jpg" alt="Interior da parte de baixo de uma geladeira doméstica com prateleiras e alimentos" width="1200" height="900" class="hero-slide-img">
+                    <div class="hero-slide-overlay">
+                        <div class="hero-slide-content">
+                            <span class="category-tag">Consertos Domésticos</span>
+                            <h2>Geladeira Consul não gela a parte de baixo: o que verificar</h2>
+                            <p>Entenda por que o freezer congela enquanto o refrigerador esquenta e veja as 4 verificações externas seguras antes de chamar um técnico.</p>
+                            <div class="hero-slide-actions">
+                                <a href="artigos/geladeira-consul-nao-gela-parte-de-baixo-o-que-fazer.html" class="btn btn-secondary">Ver passo a passo</a>
+                            </div>
                         </div>
                     </div>
+                </article>
 
-                    <div class="facet-group">
-                        <span class="facet-label">Por ambiente:</span>
-                        <div class="facet-chips">
-                            <a href="busca.html?q=cozinha" class="facet-chip">cozinha</a>
-                            <a href="busca.html?q=banheiro" class="facet-chip">banheiro</a>
-                            <a href="busca.html?q=quarto" class="facet-chip">quarto</a>
-                            <a href="busca.html?q=escritorio" class="facet-chip">escritório</a>
-                            <a href="busca.html?q=comercio" class="facet-chip">comércio</a>
-                            <a href="busca.html?q=lavanderia" class="facet-chip">área de serviço</a>
+                <!-- Destaque 2 -->
+                <article class="hero-slide" data-slide-index="1" aria-roledescription="slide" aria-label="2 de 3: Como ajustar fechadura de porta e maçaneta" hidden>
+                    <img src="imagens/artigos/fechadura_capa.jpg" alt="Conjunto de fechadura residencial e chaves para manutenção básica" width="1200" height="675" class="hero-slide-img" loading="lazy">
+                    <div class="hero-slide-overlay">
+                        <div class="hero-slide-content">
+                            <span class="category-tag">Consertos Domésticos</span>
+                            <h2>Como ajustar fechadura de porta e maçaneta frouxa</h2>
+                            <p>Aprenda a lubrificar o cilindro a seco com grafite em pó, reapertar espelhos externos e identificar desalinhamento na dobradiça sem ficar trancado.</p>
+                            <div class="hero-slide-actions">
+                                <a href="artigos/como-consertar-fechadura-de-porta.html" class="btn btn-secondary">Ver passo a passo</a>
+                            </div>
                         </div>
                     </div>
+                </article>
 
-                    <div class="facet-group">
-                        <span class="facet-label">Por objeto:</span>
-                        <div class="facet-chips">
-                            <a href="busca.html?q=porta" class="facet-chip">porta</a>
-                            <a href="busca.html?q=parede" class="facet-chip">parede</a>
-                            <a href="busca.html?q=eletrodomestico" class="facet-chip">eletrodoméstico</a>
-                            <a href="busca.html?q=movel" class="facet-chip">móvel</a>
-                            <a href="busca.html?q=torneira" class="facet-chip">torneira</a>
-                            <a href="busca.html?q=janela" class="facet-chip">janela</a>
+                <!-- Destaque 3 -->
+                <article class="hero-slide" data-slide-index="2" aria-roledescription="slide" aria-label="3 de 3: Como desentupir pia sem soda cáustica" hidden>
+                    <img src="imagens/artigos/pia_entupida.jpg" alt="Pia de cozinha com acúmulo de água indicando escoamento lento" width="1200" height="800" class="hero-slide-img" loading="lazy">
+                    <div class="hero-slide-overlay">
+                        <div class="hero-slide-content">
+                            <span class="category-tag">Consertos Domésticos</span>
+                            <h2>Como desentupir pia sem usar soda cáustica</h2>
+                            <p>Guia para obstruções leves com desentupidor de borracha, água morna com detergente e limpeza manual do sifão, com alertas de segurança.</p>
+                            <div class="hero-slide-actions">
+                                <a href="artigos/desentupir-pia-sem-soda-caustica.html" class="btn btn-secondary">Ver passo a passo</a>
+                            </div>
                         </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Barra de controles manuais (setas + indicadores + status acessível) -->
+            <div class="hero-carousel-bar" id="heroCarouselControls">
+                <div class="hero-carousel-arrows">
+                    <button type="button" class="hero-arrow-btn" id="heroPrevBtn" aria-label="Mostrar destaque anterior">
+                        <span aria-hidden="true">←</span> Anterior
+                    </button>
+                    <button type="button" class="hero-arrow-btn" id="heroNextBtn" aria-label="Mostrar próximo destaque">
+                        Próximo <span aria-hidden="true">→</span>
+                    </button>
+                </div>
+
+                <div class="hero-carousel-indicators" role="group" aria-label="Selecionar destaque">
+                    <button type="button" class="hero-dot-btn is-active" data-slide-to="0" aria-label="Destaque 1 de 3: Geladeira Consul não gela a parte de baixo (selecionado)" aria-current="true">1</button>
+                    <button type="button" class="hero-dot-btn" data-slide-to="1" aria-label="Destaque 2 de 3: Como ajustar fechadura de porta e maçaneta" aria-current="false">2</button>
+                    <button type="button" class="hero-dot-btn" data-slide-to="2" aria-label="Destaque 3 de 3: Como desentupir pia sem usar soda cáustica" aria-current="false">3</button>
+                </div>
+
+                <span class="hero-carousel-status" id="heroCarouselStatus" aria-live="polite">Destaque 1 de 3</span>
+            </div>
+        </section>
+
+        <!-- 3. Busca por problema (visível logo abaixo do destaque, sem competir visualmente com a imagem) -->
+        <section class="home-search-strip" aria-labelledby="search-strip-heading">
+            <div class="home-search-strip-header">
+                <h2 id="search-strip-heading">Qual problema você precisa resolver?</h2>
+                <p>Pesquise por sintoma, ambiente ou objeto para encontrar o guia certo e ver o que pode ser checado com segurança.</p>
+            </div>
+
+            <form action="busca.html" method="GET" class="home-hero-search-form home-strip-search-form" role="search">
+                <label for="homeHeroSearchInput" class="sr-only">Descreva o problema, ambiente ou objeto</label>
+                <input
+                    type="search"
+                    id="homeHeroSearchInput"
+                    name="q"
+                    placeholder="Ex.: pia entupida, fechadura agarrando, geladeira não gela, mofo..."
+                    aria-label="Descreva o problema, ambiente ou objeto que você precisa resolver"
+                    autocomplete="off"
+                    required
+                >
+                <button type="submit" class="btn btn-primary">Buscar orientação</button>
+            </form>
+
+            <div class="home-strip-facets" aria-label="Atalhos de busca por problema, ambiente e objeto">
+                <div class="strip-facet-row">
+                    <span class="strip-facet-label">Por problema:</span>
+                    <div class="strip-facet-chips">
+                        <a href="busca.html?q=pia+entupida" class="suggestion-chip">pia entupida</a>
+                        <a href="busca.html?q=porta+rangendo" class="suggestion-chip">porta rangendo</a>
+                        <a href="busca.html?q=fechadura+agarrando" class="suggestion-chip">fechadura agarrando</a>
+                        <a href="busca.html?q=geladeira+nao+gela+embaixo" class="suggestion-chip">geladeira não gela embaixo</a>
+                        <a href="busca.html?q=maquina+nao+centrifuga" class="suggestion-chip">máquina não centrifuga</a>
+                        <a href="busca.html?q=mofo+na+parede" class="suggestion-chip">mofo na parede</a>
+                        <a href="busca.html?q=gaveta+travando" class="suggestion-chip">gaveta travando</a>
+                    </div>
+                </div>
+
+                <div class="strip-facet-row">
+                    <span class="strip-facet-label">Por ambiente:</span>
+                    <div class="strip-facet-chips">
+                        <a href="busca.html?q=cozinha" class="suggestion-chip">cozinha</a>
+                        <a href="busca.html?q=banheiro" class="suggestion-chip">banheiro</a>
+                        <a href="busca.html?q=quarto" class="suggestion-chip">quarto</a>
+                        <a href="busca.html?q=escritorio" class="suggestion-chip">escritório</a>
+                        <a href="busca.html?q=comercio" class="suggestion-chip">comércio</a>
+                        <a href="busca.html?q=lavanderia" class="suggestion-chip">área de serviço</a>
+                    </div>
+                </div>
+
+                <div class="strip-facet-row">
+                    <span class="strip-facet-label">Por objeto:</span>
+                    <div class="strip-facet-chips">
+                        <a href="busca.html?q=porta" class="suggestion-chip">porta</a>
+                        <a href="busca.html?q=parede" class="suggestion-chip">parede</a>
+                        <a href="busca.html?q=eletrodomestico" class="suggestion-chip">eletrodoméstico</a>
+                        <a href="busca.html?q=movel" class="suggestion-chip">móvel</a>
+                        <a href="busca.html?q=torneira" class="suggestion-chip">torneira</a>
+                        <a href="busca.html?q=janela" class="suggestion-chip">janela</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 5. Aviso curto e visível de que alguns reparos exigem profissional -->
+        <!-- 4. Aviso de segurança visível -->
         <section class="home-pro-notice" aria-label="Aviso de segurança e limite de atuação">
             <div class="home-pro-notice-icon" aria-hidden="true">⚠️</div>
             <div class="home-pro-notice-text">
@@ -149,7 +220,7 @@
             </div>
         </section>
 
-        <!-- 3. Categorias e exemplos populares, sem criar links quebrados -->
+        <!-- 5. Categorias existentes (preservadas abaixo da área de destaque) -->
         <section class="home-categories" aria-labelledby="categories-heading">
             <h2 id="categories-heading" class="section-title">Categorias e Exemplos Populares</h2>
             <div class="category-grid">
@@ -176,47 +247,34 @@
             </div>
         </section>
 
-        <!-- 4. Área de Guias Recomendados e Recentes -->
-        <section class="latest-articles" aria-labelledby="recommended-heading">
-            <h2 id="recommended-heading" class="section-title">Guias Recomendados em Destaque</h2>
-
-            <div class="hero">
-                <div class="main-featured">
-                    <a href="artigos/como-consertar-fechadura-de-porta.html">
-                        <img src="imagens/artigos/fechadura_capa.jpg" alt="Conjunto de fechadura residencial e chaves para manutenção básica" width="800" height="450">
-                        <div class="featured-content">
-                            <span class="category-tag">Consertos Domésticos</span>
-                            <h2>Como ajustar fechadura de porta: lubrificação, maçaneta frouxa e alinhamento básico</h2>
-                        </div>
-                    </a>
-                </div>
-                <div class="secondary-featured">
-                    <a href="artigos/desentupir-pia-sem-soda-caustica.html" class="card-small">
-                        <img src="imagens/artigos/pia_entupida.jpg" alt="Pia de cozinha com escoamento lento" width="400" height="250" loading="lazy">
-                        <div class="card-small-content">
-                            <span class="category-tag">Consertos Domésticos</span>
-                            <h3>Como desentupir pia sem soda cáustica: guia para obstruções leves</h3>
-                        </div>
-                    </a>
-                    <a href="artigos/tirar-mofo-das-paredes-solucoes.html" class="card-small">
-                        <img src="imagens/artigos/tirar_mofo.jpg" alt="Limpeza de parede com equipamento de proteção" width="400" height="250" loading="lazy">
-                        <div class="card-small-content">
-                            <span class="category-tag">Limpeza e Manutenção</span>
-                            <h3>Como limpar mofo da parede e controlar a umidade com segurança</h3>
-                        </div>
-                    </a>
-                    <a href="artigos/10-ferramentas-essenciais-para-ter-em-casa.html" class="card-small">
-                        <img src="imagens/artigos/ferramentas_basicas.jpg" alt="Ferramentas manuais básicas sobre bancada" width="400" height="250" loading="lazy">
-                        <div class="card-small-content">
-                            <span class="category-tag">Ferramentas</span>
-                            <h3>10 ferramentas básicas para ter em casa e usar com segurança</h3>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <h2 class="section-title">Todos os Guias Revisados</h2>
+        <!-- 6. Guias recomendados e demais seções atuais -->
+        <section class="latest-articles" aria-labelledby="all-guides-heading">
+            <h2 id="all-guides-heading" class="section-title">Guias Recomendados e Recentes</h2>
             <div class="article-grid">
+                <a href="artigos/como-tirar-rangido-de-porta-e-ajustar-dobradica.html" class="card">
+                    <img src="imagens/artigos/fechadura_capa.jpg" alt="Detalhe de porta residencial e dobradiça para manutenção" width="800" height="450" loading="lazy">
+                    <div class="card-content">
+                        <span class="category-tag">Consertos Domésticos</span>
+                        <h3>Porta rangendo ou raspando: como ajustar dobradiças</h3>
+                        <p>Como lubrificar dobradiças sem manchar a madeira, reapertar parafusos folgados e quando chamar marceneiro.</p>
+                    </div>
+                </a>
+                <a href="artigos/como-limpar-quintal-e-calha-com-seguranca.html" class="card">
+                    <img src="imagens/artigos/tirar_mofo.jpg" alt="Limpeza preventiva de superfícies e ralos externos" width="800" height="450" loading="lazy">
+                    <div class="card-content">
+                        <span class="category-tag">Limpeza e Manutenção</span>
+                        <h3>Como limpar quintal, calçada com limo e ralos externos</h3>
+                        <p>Remova limo escorregadio, libere grelhas de escoamento de chuva e evite infiltração no rodapé das paredes.</p>
+                    </div>
+                </a>
+                <a href="artigos/como-escolher-parafusadeira-e-kit-de-ferramentas-para-casa.html" class="card">
+                    <img src="imagens/artigos/ferramentas_basicas.jpg" alt="Bancada com kit de ferramentas e chaves para móveis" width="800" height="450" loading="lazy">
+                    <div class="card-content">
+                        <span class="category-tag">Ferramentas</span>
+                        <h3>Como escolher parafusadeira e kit de ferramentas para casa</h3>
+                        <p>Ajuste gavetas travando, portas de armário e móveis usando o controle de torque e as pontas certas.</p>
+                    </div>
+                </a>
                 <a href="artigos/geladeira-consul-nao-gela-parte-de-baixo-o-que-fazer.html" class="card">
                     <img src="imagens/geladeira-consul-nao-gela-parte-de-baixo.jpg" alt="Interior da parte de baixo de uma geladeira doméstica aberta" width="800" height="600" loading="lazy">
                     <div class="card-content">
@@ -268,7 +326,7 @@
             </div>
         </section>
 
-        <!-- Bloco informativo de transparência e segurança (sem formulários quebrados ou promessas fictícias) -->
+        <!-- Bloco informativo de transparência e segurança -->
         <section class="home-editorial-callout" aria-labelledby="how-we-work-heading">
             <div class="home-editorial-callout-inner">
                 <h2 id="how-we-work-heading">Como usar nossos guias com segurança</h2>

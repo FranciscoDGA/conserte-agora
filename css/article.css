@@ -152,3 +152,102 @@
 .editorial-box strong {
   color: var(--primary-color);
 }
+
+/* Affiliate Product Cards & Contextual Backlink Box */
+.affiliate-section {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  border: 1px solid var(--border-color);
+  border-top: 4px solid var(--accent-color);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 1.85rem;
+  margin: 2.25rem 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.affiliate-section h2,
+.affiliate-section h3 {
+  margin-top: 0 !important;
+}
+
+.affiliate-disclosure {
+  font-size: 0.82rem;
+  color: var(--muted-text);
+  background: var(--surface-muted);
+  border-radius: var(--radius-sm);
+  padding: 0.55rem 0.85rem;
+  margin-bottom: 1.25rem !important;
+}
+
+.affiliate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.1rem;
+  margin: 1.15rem 0;
+}
+
+.affiliate-card {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.2rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.75rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.affiliate-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--secondary-color);
+}
+
+.affiliate-badge {
+  display: inline-block;
+  align-self: flex-start;
+  background: #fef9c3;
+  color: #854d0e;
+  border: 1px solid #fde047;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+}
+
+.affiliate-card h4 {
+  font-size: 1rem !important;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0.35rem 0 !important;
+  line-height: 1.35;
+}
+
+.affiliate-card p {
+  font-size: 0.88rem !important;
+  color: var(--light-text);
+  margin: 0 !important;
+  line-height: 1.5;
+}
+
+.affiliate-card .btn {
+  width: 100%;
+  font-size: 0.88rem;
+  padding: 0.6rem 1rem;
+  text-decoration: none !important;
+}
+
+.partner-review-callout {
+  background: var(--teal-soft);
+  border: 1px solid rgba(15, 118, 110, 0.25);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.25rem;
+  margin-top: 1.15rem;
+  font-size: 0.92rem;
+}
+
+.partner-review-callout p {
+  margin: 0 !important;
+}

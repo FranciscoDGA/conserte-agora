@@ -389,6 +389,75 @@
           });
         }
       }
+
+      // Manual Hero Editorial Carousel (no autoplay, keyboard accessible, graceful fallback if <= 1 slide)
+      const carousel = document.getElementById('heroCarousel');
+      if (carousel) {
+        const slides = Array.from(carousel.querySelectorAll('.hero-slide'));
+        const controlsBar = document.getElementById('heroCarouselControls');
+        const prevBtn = document.getElementById('heroPrevBtn');
+        const nextBtn = document.getElementById('heroNextBtn');
+        const dotBtns = Array.from(carousel.querySelectorAll('.hero-dot-btn'));
+        const statusEl = document.getElementById('heroCarouselStatus');
+
+        if (slides.length <= 1) {
+          if (slides[0]) {
+            slides[0].hidden = false;
+            slides[0].classList.add('is-active');
+          }
+          if (controlsBar) controlsBar.hidden = true;
+        } else {
+          let currentIndex = 0;
+
+          const showSlide = (targetIndex) => {
+            const total = slides.length;
+            currentIndex = ((targetIndex % total) + total) % total;
+
+            slides.forEach((slide, idx) => {
+              const active = idx === currentIndex;
+              slide.classList.toggle('is-active', active);
+              slide.hidden = !active;
+            });
+
+            dotBtns.forEach((dot, idx) => {
+              const active = idx === currentIndex;
+              dot.classList.toggle('is-active', active);
+              dot.setAttribute('aria-current', active ? 'true' : 'false');
+              const slideTitle = (slides[idx].querySelector('h2') || {}).textContent || `Destaque ${idx + 1}`;
+              dot.setAttribute(
+                'aria-label',
+                `Destaque ${idx + 1} de ${total}: ${slideTitle}${active ? ' (selecionado)' : ''}`
+              );
+            });
+
+            if (statusEl) {
+              statusEl.textContent = `Destaque ${currentIndex + 1} de ${total}`;
+            }
+          };
+
+          if (prevBtn) {
+            prevBtn.addEventListener('click', () => showSlide(currentIndex - 1));
+          }
+          if (nextBtn) {
+            nextBtn.addEventListener('click', () => showSlide(currentIndex + 1));
+          }
+          dotBtns.forEach((dot, idx) => {
+            dot.addEventListener('click', () => showSlide(idx));
+          });
+
+          carousel.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+              e.preventDefault();
+              showSlide(currentIndex - 1);
+            } else if (e.key === 'ArrowRight') {
+              e.preventDefault();
+              showSlide(currentIndex + 1);
+            }
+          });
+
+          showSlide(0);
+        }
+      }
     });
   }
 

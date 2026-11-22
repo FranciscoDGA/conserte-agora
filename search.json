@@ -1,5 +1,74 @@
 [
   {
+    "title": "Porta rangendo ou raspando: como lubrificar e ajustar dobradiças com segurança",
+    "url": "artigos/como-tirar-rangido-de-porta-e-ajustar-dobradica.html",
+    "category": "Consertos Domésticos",
+    "categoryUrl": "categorias/consertos-domesticos.html",
+    "type": "artigo",
+    "desc": "Veja como eliminar rangidos nas dobradiças da porta sem sujar a madeira, reapertar parafusos folgados com a porta apoiada e saber quando chamar marceneiro.",
+    "keywords": [
+      "porta rangendo",
+      "dobradica rangendo",
+      "porta fazendo barulho",
+      "porta raspando",
+      "lubrificar dobradica",
+      "parafuso da dobradica frouxo",
+      "porta",
+      "quarto",
+      "banheiro",
+      "escritorio",
+      "comercio",
+      "desengripante"
+    ]
+  },
+  {
+    "title": "Como limpar quintal, calçada com limo e ralos externos para evitar infiltração",
+    "url": "artigos/como-limpar-quintal-e-calha-com-seguranca.html",
+    "category": "Limpeza e Manutenção",
+    "categoryUrl": "categorias/limpeza-e-manutencao.html",
+    "type": "artigo",
+    "desc": "Passo a passo para remover limo escorregadio de calçadas, desobstruir grelhas de ralos externos ao nível do piso e prevenir umidade ascendente no rodapé.",
+    "keywords": [
+      "limpar quintal",
+      "limo na calcada",
+      "piso escorregadio",
+      "ralo externo entupido",
+      "agua de chuva empocada",
+      "infiltracao no rodape",
+      "lavadora de alta pressao",
+      "aspirador de po e agua",
+      "area externa",
+      "varanda",
+      "garagem",
+      "comercio"
+    ]
+  },
+  {
+    "title": "Como escolher parafusadeira e kit de ferramentas para casa (móveis, armários e gavetas)",
+    "url": "artigos/como-escolher-parafusadeira-e-kit-de-ferramentas-para-casa.html",
+    "category": "Ferramentas",
+    "categoryUrl": "categorias/ferramentas.html",
+    "type": "artigo",
+    "desc": "Veja como escolher uma parafusadeira doméstica com controle de torque e um jogo de chaves para regular gavetas travando, portas de armário e móveis em MDF.",
+    "keywords": [
+      "parafusadeira",
+      "furadeira",
+      "kit de ferramentas",
+      "maleta de ferramentas",
+      "gaveta travando",
+      "corredica de gaveta",
+      "porta de armario torta",
+      "dobradica de armario",
+      "movel",
+      "guarda roupa",
+      "cadeira bamba",
+      "quarto",
+      "cozinha",
+      "escritorio",
+      "comercio"
+    ]
+  },
+  {
     "title": "Geladeira Consul não gela a parte de baixo: causas comuns e o que verificar com segurança",
     "url": "artigos/geladeira-consul-nao-gela-parte-de-baixo-o-que-fazer.html",
     "category": "Consertos Domésticos",
@@ -110,7 +179,9 @@
       "detergente",
       "bicarbonato",
       "vinagre",
-      "encanador"
+      "encanador",
+      "cozinha",
+      "banheiro"
     ]
   },
   {
@@ -135,7 +206,10 @@
       "infiltracao",
       "ventilacao",
       "banheiro umido",
-      "quarto umido"
+      "quarto umido",
+      "parede",
+      "quarto",
+      "banheiro"
     ]
   },
   {
@@ -179,7 +253,7 @@
     "category": "Consertos Domésticos",
     "categoryUrl": "categorias/consertos-domesticos.html",
     "type": "categoria",
-    "desc": "Guias passo a passo de manutenção básica em fechaduras, desobstrução leve de pias e verificações externas seguras em geladeiras e máquinas de lavar.",
+    "desc": "Guias passo a passo de manutenção básica em fechaduras, dobradiças, desobstrução leve de pias e verificações externas seguras em geladeiras e máquinas de lavar.",
     "keywords": [
       "consertos domesticos",
       "reparos residenciais",
@@ -188,7 +262,8 @@
       "fechadura",
       "pia",
       "geladeira",
-      "maquina de lavar"
+      "maquina de lavar",
+      "dobradica"
     ]
   },
   {
@@ -197,7 +272,7 @@
     "category": "Limpeza e Manutenção",
     "categoryUrl": "categorias/limpeza-e-manutencao.html",
     "type": "categoria",
-    "desc": "Orientações práticas e cuidados de segurança para limpeza de mofo superficial, ventilação de ambientes e prevenção de umidade.",
+    "desc": "Orientações práticas e cuidados de segurança para limpeza de mofo superficial, quintais, calçadas com limo e prevenção de umidade.",
     "keywords": [
       "limpeza",
       "manutencao preventiva",
@@ -205,7 +280,9 @@
       "mofo",
       "bolor",
       "umidade",
-      "parede"
+      "parede",
+      "quintal",
+      "calcada"
     ]
   },
   {
@@ -214,10 +291,11 @@
     "category": "Ferramentas",
     "categoryUrl": "categorias/ferramentas.html",
     "type": "categoria",
-    "desc": "Guias sobre escolha, organização e uso seguro de ferramentas manuais básicas e equipamentos de proteção individual para o lar.",
+    "desc": "Guias sobre escolha, organização e uso seguro de ferramentas manuais básicas, parafusadeiras e equipamentos de proteção individual para o lar.",
     "keywords": [
       "ferramentas",
       "ferramentas manuais",
+      "parafusadeira",
       "kit basico",
       "caixa de ferramentas",
       "equipamentos de protecao"
