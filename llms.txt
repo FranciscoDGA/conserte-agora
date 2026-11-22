@@ -18,6 +18,9 @@ Portal brasileiro de manutenção doméstica básica com foco em segurança para
 
 ## Guias Revisados
 
+- [Caixa acoplada vazando água no vaso: como identificar a causa e regular com segurança](https://conserte-agora.vercel.app/artigos/como-consertar-caixa-acoplada-vazando-agua-no-vaso.html): Identificação de transbordamento pelo ladrão vs. obturador gasto, regulagem da boia e higiene sanitária.
+- [Torneira pingando: como identificar a causa e trocar o vedante com segurança](https://conserte-agora.vercel.app/artigos/como-consertar-torneira-pingando-trocar-vedante-ou-reparo.html): Como trocar a carrapeta de borracha ou o reparo cerâmico 1/4 de volta sem danificar a rosca nem o acabamento.
+- [Ventilador fraco, travando ou fazendo barulho: como limpar as peças e o eixo com segurança](https://conserte-agora.vercel.app/artigos/como-limpar-ventilador-fraco-ou-barulhento-com-seguranca.html): Desmontagem segura da grade fora da tomada, remoção de cabelos no eixo do motor e lavagem correta das hélices.
 - [Porta rangendo ou raspando: como lubrificar e ajustar dobradiças com segurança](https://conserte-agora.vercel.app/artigos/como-tirar-rangido-de-porta-e-ajustar-dobradica.html): Como eliminar rangidos nas dobradiças sem sujar a madeira, reapertar parafusos folgados e quando chamar marceneiro.
 - [Como limpar quintal, calçada com limo e ralos externos para evitar infiltração](https://conserte-agora.vercel.app/artigos/como-limpar-quintal-e-calha-com-seguranca.html): Remoção segura de limo em calçadas, limpeza de grelhas de ralos pluviais de piso e prevenção de umidade no rodapé.
 - [Como escolher parafusadeira e kit de ferramentas para casa (móveis, armários e gavetas)](https://conserte-agora.vercel.app/artigos/como-escolher-parafusadeira-e-kit-de-ferramentas-para-casa.html): Uso de controle de torque e chaves adequadas para regular gavetas travando, portas de armário e móveis em MDF.

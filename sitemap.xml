@@ -120,4 +120,22 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+  <url>
+    <loc>https://conserte-agora.vercel.app/artigos/como-consertar-caixa-acoplada-vazando-agua-no-vaso.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://conserte-agora.vercel.app/artigos/como-consertar-torneira-pingando-trocar-vedante-ou-reparo.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://conserte-agora.vercel.app/artigos/como-limpar-ventilador-fraco-ou-barulhento-com-seguranca.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
