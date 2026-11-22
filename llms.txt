@@ -1,34 +1,35 @@
 # Conserte Agora
 
-> Guias passo a passo de reparos domésticos, hidráulica, fechaduras, elétrica e manutenção residencial.
+> Guias passo a passo para identificar pequenos problemas domésticos, entender o que verificar com segurança e saber quando procurar um profissional.
 
-Portal brasileiro de faça-você-mesmo (DIY) e manutenção doméstica com tutoriais práticos para desentupir pia, tirar mofo, consertar fechaduras e escolher ferramentas essenciais. Domínio canônico: https://conserte-agora.vercel.app.
+Portal brasileiro de manutenção doméstica básica com foco em segurança para iniciantes, alertas antes dos passos, fontes públicas verificáveis e limites claros para chamar profissionais. Domínio canônico: https://conserte-agora.vercel.app.
 
 ## Páginas Principais
 
-- [Página Inicial](https://conserte-agora.vercel.app/): Reparos domésticos, limpeza e ferramentas para resolver problemas em casa sem complicação.
-- [Busca](https://conserte-agora.vercel.app/busca.html): Pesquisa interna de tutoriais e soluções domésticas.
+- [Página Inicial](https://conserte-agora.vercel.app/): Busca por problema, ambiente e objeto, categorias e guias revisados.
+- [Diagnóstico Guiado: Fechadura ou Maçaneta de Porta](https://conserte-agora.vercel.app/diagnostico.html): Fluxo interativo determinístico por sintomas observáveis com alertas de segurança e hipóteses.
+- [Busca](https://conserte-agora.vercel.app/busca.html): Pesquisa interna de tutoriais, categorias e soluções domésticas.
 
 ## Categorias
 
-- [Consertos Domésticos](https://conserte-agora.vercel.app/categorias/consertos-domesticos.html): Guias passo a passo de manutenção em portas, fechaduras e pias.
-- [Limpeza e Manutenção](https://conserte-agora.vercel.app/categorias/limpeza-e-manutencao.html): Soluções caseiras seguras contra mofo e umidade.
-- [Ferramentas](https://conserte-agora.vercel.app/categorias/ferramentas.html): Guias sobre ferramentas básicas e kit residencial.
+- [Consertos Domésticos](https://conserte-agora.vercel.app/categorias/consertos-domesticos.html): Guias passo a passo de manutenção básica em fechaduras, pias e verificações externas seguras em eletrodomésticos.
+- [Limpeza e Manutenção](https://conserte-agora.vercel.app/categorias/limpeza-e-manutencao.html): Limpeza de pequenas manchas superficiais de mofo, proteção respiratória e controle de umidade.
+- [Ferramentas](https://conserte-agora.vercel.app/categorias/ferramentas.html): Escolha e uso seguro de ferramentas manuais básicas e equipamentos de proteção individual.
 
-## Tutoriais e Consertos Domésticos
+## Guias Revisados
 
-- [Geladeira Consul Não Gela a Parte de Baixo: O Que Fazer Passo a Passo](https://conserte-agora.vercel.app/artigos/geladeira-consul-nao-gela-parte-de-baixo-o-que-fazer.html): Guia completo com 7 causas (duto congelado, damper, borracha, ventilador, sensor/resistência e gás), degelo de 24h e tabela de diagnóstico.
-- [Máquina de Lavar Não Centrifuga? 7 Causas e Como Testar](https://conserte-agora.vercel.app/artigos/maquina-de-lavar-nao-centrifuga-o-que-fazer.html): Diagnóstico por sintoma (filtro, drenagem, sensor da tampa, correia e atuador) com avisos de segurança.
-- [Como consertar fechadura de porta sem serralheiro](https://conserte-agora.vercel.app/artigos/como-consertar-fechadura-de-porta.html): Lubrificação correta com grafite, aperto de maçaneta e alinhamento de trinco.
-- [5 maneiras de desentupir pia sem soda cáustica](https://conserte-agora.vercel.app/artigos/desentupir-pia-sem-soda-caustica.html): Métodos caseiros seguros sem corroer tubulações.
-- [Como tirar mofo das paredes de forma definitiva](https://conserte-agora.vercel.app/artigos/tirar-mofo-das-paredes-solucoes.html): Tratamento eficaz contra bolor com prevenção de retorno.
-- [10 ferramentas básicas que todo mundo precisa ter em casa](https://conserte-agora.vercel.app/artigos/10-ferramentas-essenciais-para-ter-em-casa.html): Kit essencial para reparos domésticos rápidos.
+- [Geladeira Consul não gela a parte de baixo: causas comuns e o que verificar com segurança](https://conserte-agora.vercel.app/artigos/geladeira-consul-nao-gela-parte-de-baixo-o-que-fazer.html): Verificações externas seguras (saídas de ar, controle, borracha e degelo natural de 24h) e quando chamar técnico.
+- [Máquina de lavar não centrifuga: causas comuns e o que verificar com segurança](https://conserte-agora.vercel.app/artigos/maquina-de-lavar-nao-centrifuga-o-que-fazer.html): O que checar fora da tomada (carga, painel, mangueira e filtro) e sinais que exigem assistência técnica.
+- [Como ajustar fechadura de porta: lubrificação, maçaneta frouxa e alinhamento básico](https://conserte-agora.vercel.app/artigos/como-consertar-fechadura-de-porta.html): Lubrificação a seco com grafite em pó, reaperto de maçaneta e dobradiça superior e quando chamar chaveiro.
+- [Como desentupir pia sem soda cáustica: guia passo a passo para obstruções leves](https://conserte-agora.vercel.app/artigos/desentupir-pia-sem-soda-caustica.html): Uso do desentupidor de borracha, limpeza manual do sifão e alertas contra produtos químicos no ralo.
+- [Como limpar mofo da parede e controlar a umidade com segurança](https://conserte-agora.vercel.app/artigos/tirar-mofo-das-paredes-solucoes.html): EPIs obrigatórios, cuidados para nunca misturar água sanitária com outros produtos e identificação de infiltração.
+- [10 ferramentas básicas para ter em casa: como escolher e usar com segurança](https://conserte-agora.vercel.app/artigos/10-ferramentas-essenciais-para-ter-em-casa.html): Kit básico de ferramentas manuais para pequenos ajustes mecânicos e limites para elétrica e gás.
 
-## Optional
+## Institucional e Legal
 
 - [Sobre Nós](https://conserte-agora.vercel.app/sobre.html)
-- [Equipe Editorial](https://conserte-agora.vercel.app/autor.html)
-- [Contato](https://conserte-agora.vercel.app/contato.html)
+- [Equipe Editorial e Política de Conteúdo](https://conserte-agora.vercel.app/autor.html)
+- [Contato e Canal de Correções](https://conserte-agora.vercel.app/contato.html)
 - [Política de Privacidade](https://conserte-agora.vercel.app/politica-de-privacidade.html)
 - [Política de Cookies](https://conserte-agora.vercel.app/politica-de-cookies.html)
 - [Termos de Uso](https://conserte-agora.vercel.app/termos-de-uso.html)

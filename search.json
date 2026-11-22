@@ -1,47 +1,226 @@
 [
   {
-    "title": "Geladeira Consul Não Gela a Parte de Baixo: O Que Fazer Passo a Passo",
+    "title": "Geladeira Consul não gela a parte de baixo: causas comuns e o que verificar com segurança",
     "url": "artigos/geladeira-consul-nao-gela-parte-de-baixo-o-que-fazer.html",
-    "desc": "Veja as 7 causas mais comuns quando a geladeira Consul Frost Free não gela embaixo (duto congelado, damper, borracha, ventilador e sensor) e como testar."
+    "category": "Consertos Domésticos",
+    "categoryUrl": "categorias/consertos-domesticos.html",
+    "type": "artigo",
+    "desc": "Verificações externas seguras quando a geladeira Frost Free não resfria embaixo (saídas de ar, controle de temperatura, borracha da porta e degelo natural de 24h) e quando chamar técnico.",
+    "keywords": [
+      "geladeira",
+      "refrigerador",
+      "consul",
+      "frost free",
+      "duplex",
+      "nao gela embaixo",
+      "parte de baixo quente",
+      "parte inferior nao resfria",
+      "freezer gela mas embaixo nao",
+      "degelo",
+      "descongelar",
+      "gelo no duto",
+      "borracha da porta",
+      "gaxeta",
+      "damper",
+      "ventilador",
+      "termostato",
+      "cozinha",
+      "eletrodomestico"
+    ]
   },
   {
-    "title": "Máquina de Lavar Não Centrifuga? 7 Causas Comuns e Como Testar",
+    "title": "Máquina de lavar não centrifuga: causas comuns e o que verificar com segurança",
     "url": "artigos/maquina-de-lavar-nao-centrifuga-o-que-fazer.html",
-    "desc": "Veja as 7 causas mais comuns quando a lavadora deixa a roupa encharcada (filtro, drenagem, tampa e correia) e o que testar com segurança."
+    "category": "Consertos Domésticos",
+    "categoryUrl": "categorias/consertos-domesticos.html",
+    "type": "artigo",
+    "desc": "Veja o que checar fora da tomada quando a lavadora não centrifuga (roupa embolada, excesso de espuma, altura da mangueira e filtro frontal) e quais sinais exigem assistência técnica.",
+    "keywords": [
+      "maquina de lavar",
+      "lavadora",
+      "lava e seca",
+      "nao centrifuga",
+      "centrifugacao",
+      "centrifugar",
+      "roupa molhada",
+      "roupa encharcada",
+      "agua parada no cesto",
+      "nao solta agua",
+      "nao drena",
+      "drenagem",
+      "filtro da bomba",
+      "fiapos",
+      "mangueira de saida",
+      "tampa",
+      "cesto desbalanceado",
+      "lavanderia",
+      "area de servico",
+      "eletrodomestico"
+    ]
   },
   {
-    "title": "Como consertar fechadura de porta sem serralheiro: guia passo a passo",
+    "title": "Como ajustar fechadura de porta: lubrificação, maçaneta frouxa e alinhamento básico",
     "url": "artigos/como-consertar-fechadura-de-porta.html",
-    "desc": "Aprenda a diagnosticar e consertar fechaduras emperradas ou frouxas em poucos minutos, usando grafite e ajustes simples."
+    "category": "Consertos Domésticos",
+    "categoryUrl": "categorias/consertos-domesticos.html",
+    "type": "artigo",
+    "desc": "Veja como lubrificar o cilindro (miolo) com grafite em pó, reapertar maçanetas e espelhos frouxos, ajustar dobradiças e reconhecer quando chamar um chaveiro.",
+    "keywords": [
+      "fechadura",
+      "porta",
+      "macaneta",
+      "chave agarrando",
+      "chave dura",
+      "chave nao gira",
+      "porta nao tranca",
+      "trinco",
+      "lingueta",
+      "cilindro",
+      "miolo da fechadura",
+      "grafite em po",
+      "espelho frouxo",
+      "dobradica",
+      "chaveiro",
+      "quarto",
+      "banheiro",
+      "escritorio",
+      "comercio"
+    ]
   },
   {
-    "title": "5 maneiras de desentupir pia sem soda cáustica (Seguro e Eficaz)",
+    "title": "Como desentupir pia sem soda cáustica: guia passo a passo para obstruções leves",
     "url": "artigos/desentupir-pia-sem-soda-caustica.html",
-    "desc": "Conheça métodos caseiros, seguros e econômicos para desentupir a pia da cozinha sem danificar os canos."
+    "category": "Consertos Domésticos",
+    "categoryUrl": "categorias/consertos-domesticos.html",
+    "type": "artigo",
+    "desc": "Uso do desentupidor de borracha, água morna com detergente e limpeza manual do sifão para obstruções leves na pia, com alertas contra produtos químicos no ralo.",
+    "keywords": [
+      "desentupir pia",
+      "pia entupida",
+      "ralo entupido",
+      "agua nao desce",
+      "escoamento lento",
+      "sifao",
+      "desentupidor de borracha",
+      "gordura na pia",
+      "pia de cozinha",
+      "pia de banheiro",
+      "cabelo no ralo",
+      "sem soda caustica",
+      "detergente",
+      "bicarbonato",
+      "vinagre",
+      "encanador"
+    ]
   },
   {
-    "title": "Como tirar mofo das paredes de forma definitiva com soluções caseiras",
+    "title": "Como limpar mofo da parede e controlar a umidade com segurança",
     "url": "artigos/tirar-mofo-das-paredes-solucoes.html",
-    "desc": "Elimine bolor e manchas de umidade nas paredes usando vinagre, bicarbonato e ventilação preventiva."
+    "category": "Limpeza e Manutenção",
+    "categoryUrl": "categorias/limpeza-e-manutencao.html",
+    "type": "artigo",
+    "desc": "Equipamentos de proteção individual (PFF2, luvas e óculos), limpeza de pequenas manchas superficiais de bolor, alerta para nunca misturar água sanitária com outros produtos e sinais de infiltração.",
+    "keywords": [
+      "mofo",
+      "bolor",
+      "fungo",
+      "umidade",
+      "mancha preta na parede",
+      "parede mofada",
+      "teto mofado",
+      "cheiro de mofo",
+      "vinagre branco",
+      "agua sanitaria",
+      "hipoclorito",
+      "infiltracao",
+      "ventilacao",
+      "banheiro umido",
+      "quarto umido"
+    ]
   },
   {
-    "title": "10 ferramentas básicas que todo mundo precisa ter em casa",
+    "title": "10 ferramentas básicas para ter em casa: como escolher e usar com segurança",
     "url": "artigos/10-ferramentas-essenciais-para-ter-em-casa.html",
-    "desc": "Lista essencial de ferramentas manuais para montar sua caixa de reparos domésticos e economizar com manutenção."
+    "category": "Ferramentas",
+    "categoryUrl": "categorias/ferramentas.html",
+    "type": "artigo",
+    "desc": "Conheça 10 ferramentas manuais para pequenos ajustes domésticos (chaves de fenda, Phillips, martelo, alicate, trena, chave inglesa e nível), EPIs obrigatórios e limites para elétrica e gás.",
+    "keywords": [
+      "ferramentas",
+      "kit de ferramentas",
+      "caixa de ferramentas",
+      "chave de fenda",
+      "chave phillips",
+      "martelo",
+      "alicate universal",
+      "trena",
+      "fita metrica",
+      "chave inglesa",
+      "chave ajustavel",
+      "chave allen",
+      "nivel de bolha",
+      "estilete",
+      "lanterna",
+      "fita veda rosca",
+      "grafite",
+      "epi",
+      "oculos de protecao",
+      "luvas",
+      "porta rangendo",
+      "movel",
+      "armario",
+      "escritorio",
+      "comercio"
+    ]
   },
   {
-    "title": "Consertos Domésticos — Guias e Soluções",
+    "title": "Categoria: Consertos Domésticos",
     "url": "categorias/consertos-domesticos.html",
-    "desc": "Tutoriais passo a passo para reparos em fechaduras, pias e manutenção residencial."
+    "category": "Consertos Domésticos",
+    "categoryUrl": "categorias/consertos-domesticos.html",
+    "type": "categoria",
+    "desc": "Guias passo a passo de manutenção básica em fechaduras, desobstrução leve de pias e verificações externas seguras em geladeiras e máquinas de lavar.",
+    "keywords": [
+      "consertos domesticos",
+      "reparos residenciais",
+      "manutencao da casa",
+      "eletrodomesticos",
+      "fechadura",
+      "pia",
+      "geladeira",
+      "maquina de lavar"
+    ]
   },
   {
-    "title": "Limpeza e Manutenção — Guias e Soluções",
+    "title": "Categoria: Limpeza e Manutenção",
     "url": "categorias/limpeza-e-manutencao.html",
-    "desc": "Dicas práticas para remover mofo, manchas e conservar ambientes internos."
+    "category": "Limpeza e Manutenção",
+    "categoryUrl": "categorias/limpeza-e-manutencao.html",
+    "type": "categoria",
+    "desc": "Orientações práticas e cuidados de segurança para limpeza de mofo superficial, ventilação de ambientes e prevenção de umidade.",
+    "keywords": [
+      "limpeza",
+      "manutencao preventiva",
+      "conservacao",
+      "mofo",
+      "bolor",
+      "umidade",
+      "parede"
+    ]
   },
   {
-    "title": "Ferramentas — Guias e Recomendações",
+    "title": "Categoria: Ferramentas",
     "url": "categorias/ferramentas.html",
-    "desc": "Guias sobre ferramentas manuais e elétricas indispensáveis para o lar."
+    "category": "Ferramentas",
+    "categoryUrl": "categorias/ferramentas.html",
+    "type": "categoria",
+    "desc": "Guias sobre escolha, organização e uso seguro de ferramentas manuais básicas e equipamentos de proteção individual para o lar.",
+    "keywords": [
+      "ferramentas",
+      "ferramentas manuais",
+      "kit basico",
+      "caixa de ferramentas",
+      "equipamentos de protecao"
+    ]
   }
 ]

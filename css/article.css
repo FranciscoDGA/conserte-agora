@@ -1,4 +1,4 @@
-/* Article specific enhancements (complements style.css) */
+/* Modelo Consistente de Guia — Conserte Agora */
 .article-container {
   max-width: 860px;
   margin: 2.5rem auto;
@@ -15,10 +15,140 @@
   margin: 1.75rem 0;
 }
 
-.step-card {
+.guide-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.guide-meta-card {
   background: var(--bg-color);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
+  padding: 1rem 1.2rem;
+}
+
+.guide-meta-label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted-text);
+  margin-bottom: 0.3rem;
+}
+
+.guide-meta-value {
+  display: block;
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  line-height: 1.4;
+}
+
+.safety-box {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-left: 5px solid #dc2626;
+  border-radius: var(--radius-sm);
+  padding: 1.25rem 1.4rem;
+  margin: 1.75rem 0;
+}
+
+.safety-box h2,
+.safety-box h3 {
+  color: #991b1b !important;
+  font-size: 1.15rem !important;
+  margin: 0 0 0.65rem 0 !important;
+  padding: 0 !important;
+  border: none !important;
+}
+
+.safety-box ul {
+  margin-bottom: 0 !important;
+}
+
+.safety-box li::marker {
+  color: #dc2626 !important;
+}
+
+.materials-box {
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.35rem 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.materials-box h3 {
+  margin-top: 0 !important;
+}
+
+.step-card {
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--secondary-color);
+  border-radius: var(--radius-md);
   padding: 1.25rem 1.5rem;
-  margin: 1.25rem 0;
+  margin: 1.15rem 0;
+}
+
+.step-card h3 {
+  margin-top: 0 !important;
+  margin-bottom: 0.5rem !important;
+  font-size: 1.12rem !important;
+  color: var(--primary-color) !important;
+}
+
+.step-card p:last-child,
+.step-card ul:last-child,
+.step-card ol:last-child {
+  margin-bottom: 0;
+}
+
+.call-pro-box {
+  background: var(--accent-soft);
+  border: 1px solid rgba(234, 88, 12, 0.25);
+  border-left: 5px solid var(--accent-color);
+  border-radius: var(--radius-sm);
+  padding: 1.25rem 1.4rem;
+  margin: 1.75rem 0;
+}
+
+.call-pro-box h3 {
+  margin-top: 0 !important;
+  color: #9a3412 !important;
+}
+
+.sources-box {
+  background: var(--surface-muted);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.35rem 1.5rem;
+  margin-top: 2.25rem;
+  font-size: 0.94rem;
+}
+
+.sources-box h2 {
+  font-size: 1.2rem !important;
+  margin-top: 0 !important;
+}
+
+.sources-box ul {
+  margin-bottom: 0 !important;
+}
+
+.editorial-box {
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.35rem 1.5rem;
+  margin-top: 1.5rem;
+  font-size: 0.92rem;
+  color: var(--light-text);
+}
+
+.editorial-box strong {
+  color: var(--primary-color);
 }

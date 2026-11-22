@@ -3,37 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página não encontrada | Conserte Agora</title>
-        <link rel="icon" type="image/png" sizes="96x96" href="favicon-96.png">
+    <title>Página Não Encontrada (Erro 404) | Conserte Agora</title>
+    <meta name="description" content="A página solicitada não foi encontrada. Use a busca do Conserte Agora ou navegue pelas categorias de guias domésticos.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/article.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
     <header>
         <div class="header-container">
             <div class="logo">
                 <a href="index.html">Conserte<span>Agora</span></a>
             </div>
-                                    <nav class="main-nav" aria-label="Menu principal">
+            <nav class="main-nav" aria-label="Menu principal">
                 <ul>
                     <li><a href="index.html">Início</a></li>
                     <li><a href="categorias/consertos-domesticos.html">Consertos Domésticos</a></li>
                     <li><a href="categorias/limpeza-e-manutencao.html">Limpeza</a></li>
                     <li><a href="categorias/ferramentas.html">Ferramentas</a></li>
+                    <li><a href="diagnostico.html">Diagnóstico Guiado</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
                 </ul>
             </nav>
+            <div class="search-bar">
+                <label for="headerSearch404" class="sr-only">Buscar soluções no site</label>
+                <input type="text" id="headerSearch404" placeholder="Buscar soluções..." aria-label="Buscar no site">
+            </div>
         </div>
     </header>
-    <main class="article-container" style="text-align: center; padding: 5rem 2rem;">
-        
-<h1 style="font-size: 4rem; color: var(--primary-color);">404</h1>
-<h2>Página não encontrada</h2>
-<p>Desculpe, a página que você está procurando não existe ou foi movida.</p>
-<a href="index.html" class="btn btn-primary" style="display: inline-block; margin-top: 2rem;">Voltar para o Início</a>
 
+    <main id="conteudo-principal" class="article-container" style="text-align: center; padding: 3.5rem 2rem;">
+        <article class="article-content">
+            <h1>Página não encontrada (Erro 404)</h1>
+            <p>O endereço que você tentou acessar não existe ou foi alterado. Use os atalhos abaixo para encontrar o guia que procura:</p>
+            <h2 class="sr-only">Opções de navegação</h2>
+            <div class="home-editorial-actions" style="margin-top: 1.75rem;">
+                <a href="index.html" class="btn btn-primary">Voltar para o Início</a>
+                <a href="busca.html" class="btn btn-secondary">Pesquisar um Problema</a>
+                <a href="diagnostico.html" class="btn btn-primary">Abrir Diagnóstico Guiado</a>
+            </div>
+        </article>
     </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Conserte Agora</h3>
+                <p>O portal feito para ajudar você a entender e cuidar da manutenção básica da sua casa com clareza e segurança.</p>
+                <p style="margin-top: 0.6rem; font-size: 0.85rem;">Responsável: Francisco Gomes • CNPJ: 27.824.190/0001-18 • Cumaru do Norte - PA</p>
+            </div>
+            <div class="footer-links">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="autor.html">Equipe Editorial</a></li>
+                    <li><a href="diagnostico.html">Diagnóstico Guiado</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
+                    <li><a href="termos-de-uso.html">Termos de Uso</a></li>
+                    <li><a href="politica-de-cookies.html">Política de Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Conserte Agora • Francisco Gomes (CNPJ 27.824.190/0001-18) • Cumaru do Norte - PA.</p>
+        </div>
+    </footer>
+
+    <div class="cookie-banner" id="cookieBanner">
+        <p>Usamos cookies para melhorar sua experiência e analisar tráfego. Leia nossa <a href="politica-de-privacidade.html">Política de Privacidade</a>.</p>
+        <button class="btn btn-primary" id="acceptCookies">Aceitar Tudo</button>
+    </div>
+
     <script src="js/main.js"></script>
 </body>
 </html>

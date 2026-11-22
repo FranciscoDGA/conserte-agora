@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conserte Agora - Soluções Práticas para Problemas Domésticos</title>
-    <meta name="description" content="O Conserte Agora ensina consertos e soluções práticas domésticas para pessoas comuns, com guias passo a passo, limpeza, manutenção e ferramentas.">
+    <title>Conserte Agora — Problemas Domésticos e Manutenção Segura</title>
+    <meta name="description" content="Identifique pequenos problemas em casa ou no trabalho, entenda o que verificar com segurança e saiba quando procurar um profissional.">
     <link rel="icon" type="image/png" sizes="96x96" href="favicon-96.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,16 +13,16 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="canonical" href="https://conserte-agora.vercel.app/">
-    <meta property="og:title" content="Conserte Agora - Soluções Práticas para Problemas Domésticos">
-    <meta property="og:description" content="Guias passo a passo de reparos domésticos, limpeza de casa e ferramentas essenciais para resolver problemas sem complicações.">
+    <meta property="og:title" content="Conserte Agora — Identifique Problemas Domésticos com Segurança">
+    <meta property="og:description" content="Guias práticos para identificar pequenos problemas em casa ou no trabalho, entender o que verificar com segurança e saber quando chamar um profissional.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://conserte-agora.vercel.app/">
     <meta property="og:locale" content="pt_BR">
     <meta property="og:site_name" content="Conserte Agora">
     <meta property="og:image" content="https://conserte-agora.vercel.app/imagens/artigos/fechadura_capa.jpg">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Conserte Agora - Soluções Práticas para Problemas Domésticos">
-    <meta name="twitter:description" content="Guias passo a passo de reparos domésticos, limpeza e ferramentas essenciais.">
+    <meta name="twitter:title" content="Conserte Agora — Identifique Problemas Domésticos com Segurança">
+    <meta name="twitter:description" content="Entenda o que você pode verificar com segurança em casa ou no trabalho e quando acionar um profissional.">
     <meta name="twitter:image" content="https://conserte-agora.vercel.app/imagens/artigos/fechadura_capa.jpg">
     <script type="application/ld+json">
     {
@@ -50,6 +50,7 @@
     </script>
 </head>
 <body>
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
     <header>
         <div class="header-container">
             <div class="logo">
@@ -57,10 +58,11 @@
             </div>
             <nav class="main-nav" aria-label="Menu principal">
                 <ul>
-                    <li><a href="index.html">Início</a></li>
+                    <li><a href="index.html" aria-current="page">Início</a></li>
                     <li><a href="categorias/consertos-domesticos.html">Consertos Domésticos</a></li>
                     <li><a href="categorias/limpeza-e-manutencao.html">Limpeza</a></li>
                     <li><a href="categorias/ferramentas.html">Ferramentas</a></li>
+                    <li><a href="diagnostico.html">Diagnóstico Guiado</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
                 </ul>
             </nav>
@@ -70,127 +72,211 @@
         </div>
     </header>
 
-    <main>
-        <div class="home-hero-header">
-            <h1>Guias Práticos de Reparos Domésticos e Manutenção</h1>
-            <p class="home-hero-subtitle">Tutoriais passo a passo, seguros e econômicos para resolver problemas de casa sem complicações.</p>
-        </div>
+    <main id="conteudo-principal">
+        <!-- 1 & 2. Chamada Principal + Busca Funcional + Filtros por Problema, Ambiente e Objeto -->
+        <section class="home-search-hero" aria-labelledby="hero-heading">
+            <div class="home-search-hero-inner">
+                <span class="hero-eyebrow">Manutenção básica com clareza e segurança</span>
+                <h1 id="hero-heading">Qual problema você precisa resolver?</h1>
+                <p class="home-hero-subtitle">
+                    Ajudamos você a identificar pequenos problemas em casa, no trabalho e em outros ambientes, entender o que pode ser verificado com segurança e saber quando procurar um profissional.
+                </p>
 
-        <section class="hero">
-            <div class="main-featured">
-                <a href="artigos/como-consertar-fechadura-de-porta.html">
-                    <img src="imagens/artigos/fechadura_capa.jpg" alt="Como consertar fechadura de porta sem serralheiro" width="800" height="450">
-                    <div class="featured-content">
-                        <span class="category-tag">Consertos Domésticos</span>
-                        <h2>Como consertar fechadura de porta sem serralheiro: guia passo a passo</h2>
+                <form action="busca.html" method="GET" class="home-hero-search-form" role="search">
+                    <label for="homeHeroSearchInput" class="sr-only">Descreva o problema, ambiente ou objeto</label>
+                    <input
+                        type="search"
+                        id="homeHeroSearchInput"
+                        name="q"
+                        placeholder="Ex.: pia entupida, fechadura agarrando, geladeira não gela, mofo..."
+                        aria-label="Descreva o problema, ambiente ou objeto que você precisa resolver"
+                        autocomplete="off"
+                        required
+                    >
+                    <button type="submit" class="btn btn-secondary">Buscar orientação</button>
+                </form>
+
+                <div class="home-search-facets" aria-label="Atalhos de busca por problema, ambiente e objeto">
+                    <div class="facet-group">
+                        <span class="facet-label">Por problema:</span>
+                        <div class="facet-chips">
+                            <a href="busca.html?q=pia+entupida" class="facet-chip">pia entupida</a>
+                            <a href="busca.html?q=porta+rangendo" class="facet-chip">porta rangendo</a>
+                            <a href="busca.html?q=fechadura+agarrando" class="facet-chip">fechadura agarrando</a>
+                            <a href="busca.html?q=geladeira+nao+gela+embaixo" class="facet-chip">geladeira não gela embaixo</a>
+                            <a href="busca.html?q=maquina+nao+centrifuga" class="facet-chip">máquina não centrifuga</a>
+                            <a href="busca.html?q=mofo+na+parede" class="facet-chip">mofo na parede</a>
+                            <a href="busca.html?q=gaveta+travando" class="facet-chip">gaveta travando</a>
+                        </div>
                     </div>
-                </a>
-            </div>
-            <div class="secondary-featured">
-                <div class="card-small">
-                    <img src="imagens/artigos/pia_entupida.jpg" alt="5 maneiras de desentupir pia sem soda cáustica" width="400" height="250" loading="lazy">
-                    <div class="card-small-content">
-                        <a href="artigos/desentupir-pia-sem-soda-caustica.html"><h3>5 maneiras de desentupir pia sem soda cáustica</h3></a>
-                        <span class="category-tag">Consertos Domésticos</span>
+
+                    <div class="facet-group">
+                        <span class="facet-label">Por ambiente:</span>
+                        <div class="facet-chips">
+                            <a href="busca.html?q=cozinha" class="facet-chip">cozinha</a>
+                            <a href="busca.html?q=banheiro" class="facet-chip">banheiro</a>
+                            <a href="busca.html?q=quarto" class="facet-chip">quarto</a>
+                            <a href="busca.html?q=escritorio" class="facet-chip">escritório</a>
+                            <a href="busca.html?q=comercio" class="facet-chip">comércio</a>
+                            <a href="busca.html?q=lavanderia" class="facet-chip">área de serviço</a>
+                        </div>
                     </div>
-                </div>
-                <div class="card-small">
-                    <img src="imagens/artigos/tirar_mofo.jpg" alt="Como tirar mofo das paredes de forma definitiva" width="400" height="250" loading="lazy">
-                    <div class="card-small-content">
-                        <a href="artigos/tirar-mofo-das-paredes-solucoes.html"><h3>Como tirar mofo das paredes: soluções caseiras</h3></a>
-                        <span class="category-tag">Limpeza e Manutenção</span>
-                    </div>
-                </div>
-                <div class="card-small">
-                    <img src="imagens/artigos/ferramentas_basicas.jpg" alt="10 ferramentas básicas que todo mundo precisa ter em casa" width="400" height="250" loading="lazy">
-                    <div class="card-small-content">
-                        <a href="artigos/10-ferramentas-essenciais-para-ter-em-casa.html"><h3>10 ferramentas essenciais para ter em casa</h3></a>
-                        <span class="category-tag">Ferramentas</span>
+
+                    <div class="facet-group">
+                        <span class="facet-label">Por objeto:</span>
+                        <div class="facet-chips">
+                            <a href="busca.html?q=porta" class="facet-chip">porta</a>
+                            <a href="busca.html?q=parede" class="facet-chip">parede</a>
+                            <a href="busca.html?q=eletrodomestico" class="facet-chip">eletrodoméstico</a>
+                            <a href="busca.html?q=movel" class="facet-chip">móvel</a>
+                            <a href="busca.html?q=torneira" class="facet-chip">torneira</a>
+                            <a href="busca.html?q=janela" class="facet-chip">janela</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="home-categories">
-            <h2 class="section-title">Navegue por Categorias</h2>
+        <!-- 5. Aviso curto e visível de que alguns reparos exigem profissional -->
+        <section class="home-pro-notice" aria-label="Aviso de segurança e limite de atuação">
+            <div class="home-pro-notice-icon" aria-hidden="true">⚠️</div>
+            <div class="home-pro-notice-text">
+                <strong>Importante: alguns reparos exigem um profissional qualificado.</strong>
+                <p>Nossos guias mostram apenas verificações visuais e cuidados simples de baixo risco. Nunca tente intervir por conta própria em instalações de gás, rede elétrica energizada, estrutura do imóvel ou componentes internos de eletrodomésticos.</p>
+            </div>
+            <div class="home-pro-notice-action">
+                <a href="diagnostico.html" class="btn btn-primary">Testar Diagnóstico Guiado</a>
+            </div>
+        </section>
+
+        <!-- 3. Categorias e exemplos populares, sem criar links quebrados -->
+        <section class="home-categories" aria-labelledby="categories-heading">
+            <h2 id="categories-heading" class="section-title">Categorias e Exemplos Populares</h2>
             <div class="category-grid">
                 <a href="categorias/consertos-domesticos.html" class="category-card">
                     <h3>🔧 Consertos Domésticos</h3>
-                    <p>Eletrodomésticos, elétrica, hidráulica e fechaduras</p>
+                    <p>Verificações básicas e ajustes simples sem desmontagem complexa.</p>
+                    <span class="category-examples">Exemplos: fechadura, maçaneta, sifão da pia, geladeira e lavadora</span>
                 </a>
                 <a href="categorias/limpeza-e-manutencao.html" class="category-card">
                     <h3>🧹 Limpeza e Manutenção</h3>
-                    <p>Soluções caseiras contra mofo, manchas e conservação</p>
+                    <p>Conservação de superfícies, ventilação e uso seguro de saneantes.</p>
+                    <span class="category-examples">Exemplos: manchas superficiais de mofo, umidade e proteção individual</span>
                 </a>
                 <a href="categorias/ferramentas.html" class="category-card">
                     <h3>🛠️ Ferramentas</h3>
-                    <p>Guias de escolha e uso das ferramentas essenciais</p>
+                    <p>Como escolher e usar ferramentas manuais básicas com proteção.</p>
+                    <span class="category-examples">Exemplos: chaves de fenda/Phillips, trena, nível, grafite e EPIs</span>
+                </a>
+                <a href="diagnostico.html" class="category-card category-card-highlight">
+                    <h3>🧭 Diagnóstico Guiado</h3>
+                    <p>Responda perguntas simples sobre sintomas observáveis passo a passo.</p>
+                    <span class="category-examples">Disponível: Fechadura ou maçaneta de porta com dificuldade</span>
                 </a>
             </div>
         </section>
 
-        <section class="latest-articles" style="margin-top: 4rem;">
-            <h2 class="section-title">Últimos Artigos</h2>
+        <!-- 4. Área de Guias Recomendados e Recentes -->
+        <section class="latest-articles" aria-labelledby="recommended-heading">
+            <h2 id="recommended-heading" class="section-title">Guias Recomendados em Destaque</h2>
+
+            <div class="hero">
+                <div class="main-featured">
+                    <a href="artigos/como-consertar-fechadura-de-porta.html">
+                        <img src="imagens/artigos/fechadura_capa.jpg" alt="Conjunto de fechadura residencial e chaves para manutenção básica" width="800" height="450">
+                        <div class="featured-content">
+                            <span class="category-tag">Consertos Domésticos</span>
+                            <h2>Como ajustar fechadura de porta: lubrificação, maçaneta frouxa e alinhamento básico</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="secondary-featured">
+                    <a href="artigos/desentupir-pia-sem-soda-caustica.html" class="card-small">
+                        <img src="imagens/artigos/pia_entupida.jpg" alt="Pia de cozinha com escoamento lento" width="400" height="250" loading="lazy">
+                        <div class="card-small-content">
+                            <span class="category-tag">Consertos Domésticos</span>
+                            <h3>Como desentupir pia sem soda cáustica: guia para obstruções leves</h3>
+                        </div>
+                    </a>
+                    <a href="artigos/tirar-mofo-das-paredes-solucoes.html" class="card-small">
+                        <img src="imagens/artigos/tirar_mofo.jpg" alt="Limpeza de parede com equipamento de proteção" width="400" height="250" loading="lazy">
+                        <div class="card-small-content">
+                            <span class="category-tag">Limpeza e Manutenção</span>
+                            <h3>Como limpar mofo da parede e controlar a umidade com segurança</h3>
+                        </div>
+                    </a>
+                    <a href="artigos/10-ferramentas-essenciais-para-ter-em-casa.html" class="card-small">
+                        <img src="imagens/artigos/ferramentas_basicas.jpg" alt="Ferramentas manuais básicas sobre bancada" width="400" height="250" loading="lazy">
+                        <div class="card-small-content">
+                            <span class="category-tag">Ferramentas</span>
+                            <h3>10 ferramentas básicas para ter em casa e usar com segurança</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <h2 class="section-title">Todos os Guias Revisados</h2>
             <div class="article-grid">
                 <a href="artigos/geladeira-consul-nao-gela-parte-de-baixo-o-que-fazer.html" class="card">
-                    <img src="imagens/geladeira-consul-nao-gela-parte-de-baixo.jpg" alt="Geladeira Consul não gela a parte de baixo: o que fazer passo a passo" width="800" height="600" loading="lazy">
+                    <img src="imagens/geladeira-consul-nao-gela-parte-de-baixo.jpg" alt="Interior da parte de baixo de uma geladeira doméstica aberta" width="800" height="600" loading="lazy">
                     <div class="card-content">
                         <span class="category-tag">Consertos Domésticos</span>
-                        <h3>Geladeira Consul não gela a parte de baixo: o que fazer</h3>
-                        <p>Veja as 7 causas mais comuns (duto congelado, damper, borracha e sensor) e como testar com segurança.</p>
+                        <h3>Geladeira Consul não gela a parte de baixo: o que verificar</h3>
+                        <p>Verificações externas seguras (saídas de ar, controle, borracha e degelo natural) e quando chamar técnico.</p>
                     </div>
                 </a>
                 <a href="artigos/maquina-de-lavar-nao-centrifuga-o-que-fazer.html" class="card">
-                    <img src="imagens/artigos/maquina_lavar_centrifuga.jpg" alt="Máquina de lavar não centrifuga: 7 causas comuns e o que testar" width="800" height="450" loading="lazy">
+                    <img src="imagens/artigos/maquina_lavar_centrifuga.jpg" alt="Máquina de lavar roupas em área de serviço" width="800" height="450" loading="lazy">
                     <div class="card-content">
                         <span class="category-tag">Consertos Domésticos</span>
-                        <h3>Máquina de lavar não centrifuga? 7 causas e como testar</h3>
-                        <p>Veja o diagnóstico rápido por sintoma (filtro, drenagem, tampa e correia) para testar com segurança.</p>
+                        <h3>Máquina de lavar não centrifuga: causas e o que verificar</h3>
+                        <p>O que checar fora da tomada (distribuição de roupa, painel, mangueira e filtro) e sinais que exigem assistência.</p>
                     </div>
                 </a>
                 <a href="artigos/como-consertar-fechadura-de-porta.html" class="card">
-                    <img src="imagens/artigos/fechadura_capa.jpg" alt="Como consertar fechadura de porta sem serralheiro" width="800" height="450" loading="lazy">
+                    <img src="imagens/artigos/fechadura_capa.jpg" alt="Fechadura de porta e chaves" width="800" height="450" loading="lazy">
                     <div class="card-content">
                         <span class="category-tag">Consertos Domésticos</span>
-                        <h3>Como consertar fechadura de porta sem serralheiro</h3>
-                        <p>Aprenda a lubrificar, alinhar e apertar fechaduras emperradas ou frouxas em minutos.</p>
+                        <h3>Como ajustar fechadura de porta: lubrificação e maçaneta</h3>
+                        <p>Veja como lubrificar o cilindro com grafite em pó, reapertar maçanetas frouxas e identificar quando chamar chaveiro.</p>
                     </div>
                 </a>
                 <a href="artigos/desentupir-pia-sem-soda-caustica.html" class="card">
-                    <img src="imagens/artigos/pia_entupida.jpg" alt="Desentupir pia sem soda cáustica" width="800" height="450" loading="lazy">
+                    <img src="imagens/artigos/pia_entupida.jpg" alt="Pia de cozinha com água acumulada" width="800" height="450" loading="lazy">
                     <div class="card-content">
                         <span class="category-tag">Consertos Domésticos</span>
-                        <h3>5 maneiras de desentupir pia sem soda cáustica</h3>
-                        <p>Métodos caseiros seguros e econômicos para desobstruir o encanamento sem danificar os canos.</p>
+                        <h3>Como desentupir pia sem soda cáustica: obstruções leves</h3>
+                        <p>Uso correto do desentupidor de borracha, limpeza manual do sifão e alertas contra produtos químicos no ralo.</p>
                     </div>
                 </a>
                 <a href="artigos/tirar-mofo-das-paredes-solucoes.html" class="card">
-                    <img src="imagens/artigos/tirar_mofo.jpg" alt="Tirar mofo das paredes com soluções caseiras" width="800" height="450" loading="lazy">
+                    <img src="imagens/artigos/tirar_mofo.jpg" alt="Limpeza de parede interna com proteção" width="800" height="450" loading="lazy">
                     <div class="card-content">
                         <span class="category-tag">Limpeza e Manutenção</span>
-                        <h3>Como tirar mofo das paredes de forma definitiva</h3>
-                        <p>Passo a passo com vinagre branco e água sanitária diluída para eliminar fungos e umidade.</p>
+                        <h3>Como limpar mofo da parede e controlar a umidade</h3>
+                        <p>Cuidados de proteção respiratória, limpeza de pequenas manchas superficiais e sinais de infiltração estrutural.</p>
                     </div>
                 </a>
                 <a href="artigos/10-ferramentas-essenciais-para-ter-em-casa.html" class="card">
-                    <img src="imagens/artigos/ferramentas_basicas.jpg" alt="10 ferramentas básicas para ter em casa" width="800" height="450" loading="lazy">
+                    <img src="imagens/artigos/ferramentas_basicas.jpg" alt="Conjunto de ferramentas manuais básicas" width="800" height="450" loading="lazy">
                     <div class="card-content">
                         <span class="category-tag">Ferramentas</span>
-                        <h3>10 ferramentas essenciais para se ter em casa</h3>
-                        <p>Monte seu kit básico de sobrevivência para pequenos reparos domésticos rápidos.</p>
+                        <h3>10 ferramentas básicas para ter em casa e usar com segurança</h3>
+                        <p>Monte seu kit básico para ajustes mecânicos simples, com EPIs e limites claros para elétrica e gás.</p>
                     </div>
                 </a>
             </div>
         </section>
 
-        <section class="newsletter">
-            <div class="newsletter-container">
-                <h2>Não perca nenhuma dica!</h2>
-                <p>Receba guias passo a passo, truques de limpeza e soluções práticas direto no seu e-mail.</p>
-                <form action="#" method="POST" class="newsletter-form">
-                    <input type="email" placeholder="Seu melhor e-mail" required aria-label="E-mail para newsletter">
-                    <button type="submit" class="btn btn-secondary">Inscrever-se</button>
-                </form>
+        <!-- Bloco informativo de transparência e segurança (sem formulários quebrados ou promessas fictícias) -->
+        <section class="home-editorial-callout" aria-labelledby="how-we-work-heading">
+            <div class="home-editorial-callout-inner">
+                <h2 id="how-we-work-heading">Como usar nossos guias com segurança</h2>
+                <p>Cada artigo do Conserte Agora segue um modelo padronizado: explica o problema em linguagem simples, lista os materiais e equipamentos de proteção, destaca os alertas de segurança antes dos passos e indica claramente quando interromper a tentativa e chamar um profissional.</p>
+                <div class="home-editorial-actions">
+                    <a href="busca.html" class="btn btn-primary">Pesquisar um problema</a>
+                    <a href="autor.html" class="btn btn-outline-light">Conhecer nossa política editorial</a>
+                </div>
             </div>
         </section>
     </main>
@@ -199,7 +285,8 @@
         <div class="footer-container">
             <div class="footer-about">
                 <h3>Conserte Agora</h3>
-                <p>O portal feito para ajudar você a resolver problemas domésticos sem complicações. Guias práticos, testados e feitos para leigos.</p>
+                <p>O portal feito para ajudar você a entender e cuidar da manutenção básica da sua casa com clareza e segurança.</p>
+                <p style="margin-top: 0.6rem; font-size: 0.85rem;">Responsável: Francisco Gomes • CNPJ: 27.824.190/0001-18 • Cumaru do Norte - PA</p>
             </div>
             <div class="footer-links">
                 <h3>Links Úteis</h3>
@@ -207,6 +294,7 @@
                     <li><a href="sobre.html">Sobre Nós</a></li>
                     <li><a href="contato.html">Contato</a></li>
                     <li><a href="autor.html">Equipe Editorial</a></li>
+                    <li><a href="diagnostico.html">Diagnóstico Guiado</a></li>
                 </ul>
             </div>
             <div class="footer-links">
@@ -219,12 +307,12 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Conserte Agora. Todos os direitos reservados.</p>
+            <p>&copy; 2026 Conserte Agora • Francisco Gomes (CNPJ 27.824.190/0001-18) • Cumaru do Norte - PA.</p>
         </div>
     </footer>
 
     <div class="cookie-banner" id="cookieBanner">
-        <p>Usamos cookies para melhorar sua experiência, personalizar anúncios e analisar tráfego. Leia nossa <a href="politica-de-privacidade.html">Política de Privacidade</a>.</p>
+        <p>Usamos cookies para melhorar sua experiência e analisar tráfego. Leia nossa <a href="politica-de-privacidade.html">Política de Privacidade</a>.</p>
         <button class="btn btn-primary" id="acceptCookies">Aceitar Tudo</button>
     </div>
 

@@ -3,54 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidade | Conserte Agora</title>
-    <meta name="description" content="Como tratamos seus dados.">
-        <link rel="icon" type="image/png" sizes="96x96" href="favicon-96.png">
+    <title>Política de Privacidade e Dados | Conserte Agora</title>
+    <meta name="description" content="Saiba como o Conserte Agora respeita sua privacidade, quais dados locais são armazenados no navegador e como exercer seus direitos na LGPD.">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/article.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="canonical" href="https://conserte-agora.vercel.app/politica-de-privacidade.html">
-    <meta property="og:title" content="Política de Privacidade | Conserte Agora">
+    <meta property="og:title" content="Política de Privacidade e Dados | Conserte Agora">
+    <meta property="og:description" content="Saiba como o Conserte Agora trata informações de navegação e armazenamento local com transparência.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://conserte-agora.vercel.app/politica-de-privacidade.html">
-    <meta property="og:image" content="https://conserte-agora.vercel.app/imagens/artigos/fechadura_capa.jpg">
+    <meta property="og:image" content="https://conserte-agora.vercel.app/imagens/francisco-gomes.jpg">
     <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
     <header>
         <div class="header-container">
             <div class="logo">
                 <a href="index.html">Conserte<span>Agora</span></a>
             </div>
-                                    <nav class="main-nav" aria-label="Menu principal">
+            <nav class="main-nav" aria-label="Menu principal">
                 <ul>
                     <li><a href="index.html">Início</a></li>
                     <li><a href="categorias/consertos-domesticos.html">Consertos Domésticos</a></li>
                     <li><a href="categorias/limpeza-e-manutencao.html">Limpeza</a></li>
                     <li><a href="categorias/ferramentas.html">Ferramentas</a></li>
+                    <li><a href="diagnostico.html">Diagnóstico Guiado</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
                 </ul>
             </nav>
+            <div class="search-bar">
+                <label for="headerSearchPriv" class="sr-only">Buscar soluções no site</label>
+                <input type="text" id="headerSearchPriv" placeholder="Buscar soluções..." aria-label="Buscar no site">
+            </div>
         </div>
     </header>
 
-    <main class="article-container">
-        <h1>Política de Privacidade</h1><p>Levamos a sua privacidade a sério...</p>
+    <main id="conteudo-principal" class="article-container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="index.html">Início</a> &gt; <span aria-current="page">Política de Privacidade</span>
+        </nav>
+
+        <article class="article-content">
+            <h1>Política de Privacidade</h1>
+            <p>Esta Política de Privacidade descreve de forma transparente como o portal <strong>Conserte Agora</strong> opera em relação à privacidade dos leitores e à Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018 — LGPD).</p>
+
+            <h2>1. Coleta de dados e armazenamento local no navegador</h2>
+            <p>O Conserte Agora é um site informativo estático que não exige cadastro de conta para leitura dos guias. No seu navegador (`localStorage`), são registrados apenas dois itens técnicos:</p>
+            <ul>
+                <li><strong>Preferência do aviso de cookies (`cookiesAccepted`):</strong> guarda apenas o valor `"true"` quando você fecha o aviso inferior, evitando que ele reapareça a cada página;</li>
+                <li><strong>Contagem agregada de buscas sem resultado (`conserteAgora_zeroResultsAggregate_v1`):</strong> quando uma pesquisa interna não encontra artigos, apenas o termo normalizado e a contagem agregada são salvos localmente (com filtro que descarta termos com formato de e-mail, links ou sequências numéricas como telefones e documentos).</li>
+            </ul>
+            <p>Quando você opta por entrar em contato conosco pela página de <a href="contato.html">Contato</a> (via WhatsApp ou E-mail), os dados fornecidos voluntariamente na sua mensagem são utilizados exclusivamente para responder à sua solicitação de orientação, aconselhamento ou orçamento.</p>
+
+            <h2>2. Hospedagem e logs padrão de servidor</h2>
+            <p>O site é hospedado na infraestrutura da Vercel e carrega fontes tipográficas do Google Fonts. Como ocorre em qualquer site da web, o provedor de hospedagem processa registros técnicos básicos de requisição HTTP (como endereço IP e navegador) para entrega das páginas e proteção contra abusos.</p>
+
+            <h2>3. Controlador responsável e contato LGPD</h2>
+            <div class="materials-box">
+                <ul>
+                    <li><strong>Responsável / Controlador:</strong> Francisco Gomes</li>
+                    <li><strong>CNPJ:</strong> 27.824.190/0001-18</li>
+                    <li><strong>Localização:</strong> Cumaru do Norte - PA</li>
+                    <li><strong>E-mail para assuntos de privacidade e LGPD:</strong> <a href="mailto:contato@conserteagora.com.br">contato@conserteagora.com.br</a></li>
+                </ul>
+            </div>
+
+            <div class="editorial-box">
+                <p><strong>Última revisão:</strong> 21 de novembro de 2026.</p>
+            </div>
+        </article>
     </main>
 
     <footer>
         <div class="footer-container">
             <div class="footer-about">
                 <h3>Conserte Agora</h3>
-                <p>O portal feito para ajudar você a resolver problemas domésticos sem complicações.</p>
+                <p>O portal feito para ajudar você a entender e cuidar da manutenção básica da sua casa com clareza e segurança.</p>
+                <p style="margin-top: 0.6rem; font-size: 0.85rem;">Responsável: Francisco Gomes • CNPJ: 27.824.190/0001-18 • Cumaru do Norte - PA</p>
             </div>
             <div class="footer-links">
-                <h3>Links Ãšteis</h3>
+                <h3>Links Úteis</h3>
                 <ul>
                     <li><a href="sobre.html">Sobre Nós</a></li>
                     <li><a href="contato.html">Contato</a></li>
                     <li><a href="autor.html">Equipe Editorial</a></li>
+                    <li><a href="diagnostico.html">Diagnóstico Guiado</a></li>
                 </ul>
             </div>
             <div class="footer-links">
@@ -63,9 +107,15 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Conserte Agora. Todos os direitos reservados.</p>
+            <p>&copy; 2026 Conserte Agora • Francisco Gomes (CNPJ 27.824.190/0001-18) • Cumaru do Norte - PA.</p>
         </div>
     </footer>
+
+    <div class="cookie-banner" id="cookieBanner">
+        <p>Usamos cookies para melhorar sua experiência e analisar tráfego. Leia nossa <a href="politica-de-privacidade.html">Política de Privacidade</a>.</p>
+        <button class="btn btn-primary" id="acceptCookies">Aceitar Tudo</button>
+    </div>
+
     <script src="js/main.js"></script>
 </body>
 </html>

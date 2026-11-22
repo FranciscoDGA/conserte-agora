@@ -3,79 +3,400 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Busca | Conserte Agora</title>
-        <link rel="icon" type="image/png" sizes="96x96" href="favicon-96.png">
+    <title>Busca de Guias e Soluções | Conserte Agora</title>
+    <meta name="description" content="Pesquise nos guias do Conserte Agora por problemas domésticos, categorias, materiais e soluções passo a passo.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/article.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="canonical" href="https://conserte-agora.vercel.app/busca.html">
-    <meta property="og:title" content="Busca | Conserte Agora">
+    <meta property="og:title" content="Busca de Guias e Soluções | Conserte Agora">
+    <meta property="og:description" content="Pesquise nos guias do Conserte Agora por problemas domésticos, categorias e soluções passo a passo.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://conserte-agora.vercel.app/busca.html">
     <meta property="og:image" content="https://conserte-agora.vercel.app/imagens/artigos/fechadura_capa.jpg">
     <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
     <header>
         <div class="header-container">
             <div class="logo">
                 <a href="index.html">Conserte<span>Agora</span></a>
             </div>
-                                    <nav class="main-nav" aria-label="Menu principal">
+            <nav class="main-nav" aria-label="Menu principal">
                 <ul>
                     <li><a href="index.html">Início</a></li>
                     <li><a href="categorias/consertos-domesticos.html">Consertos Domésticos</a></li>
                     <li><a href="categorias/limpeza-e-manutencao.html">Limpeza</a></li>
                     <li><a href="categorias/ferramentas.html">Ferramentas</a></li>
+                    <li><a href="diagnostico.html">Diagnóstico Guiado</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
                 </ul>
             </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar soluções..." aria-label="Buscar no site">
+            </div>
         </div>
     </header>
-    <main class="article-container" style="text-align: center; padding: 5rem 2rem;">
-        
-<h1>Resultados da Busca</h1>
-<div id="search-results" style="text-align: left; margin-top: 2rem;">
-    <p>Buscando...</p>
-</div>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const urlParams = new URLSearchParams(window.location.search);
-        const query = urlParams.get('q');
-        const resultsDiv = document.getElementById('search-results');
-        
-        if (!query) {
-            resultsDiv.innerHTML = '<p>Digite algo para buscar.</p>';
-            return;
-        }
-        
-        fetch('search.json')
-            .then(res => res.json())
-            .then(data => {
-                const results = data.filter(item => 
-                    item.title.toLowerCase().includes(query.toLowerCase()) || 
-                    item.desc.toLowerCase().includes(query.toLowerCase())
-                );
-                
-                if (results.length === 0) {
-                    resultsDiv.innerHTML = '<p>Nenhum resultado encontrado para "'+query+'".</p>';
+
+    <main id="conteudo-principal" class="article-container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="index.html">Início</a> &gt; <span aria-current="page">Busca</span>
+        </nav>
+
+        <section class="search-page-section">
+            <h1>Buscar Guias e Soluções</h1>
+            <p class="search-page-lead">Pesquise por problema (ex.: geladeira não gela, máquina não centrifuga, pia entupida), ferramenta ou categoria.</p>
+
+            <form id="onPageSearchForm" class="search-page-form" action="busca.html" method="GET" role="search" novalidate>
+                <label for="searchPageInput" class="sr-only">Digite o que você precisa consertar ou limpar</label>
+                <input
+                    type="search"
+                    id="searchPageInput"
+                    name="q"
+                    placeholder="Ex.: geladeira não gela, pia entupida, mofo, fechadura..."
+                    autocomplete="off"
+                    aria-label="Termo de busca"
+                >
+                <button type="submit" class="btn btn-primary">Buscar</button>
+            </form>
+            <p id="onPageSearchError" class="form-error-msg" role="alert" hidden>Por favor, digite uma palavra-chave no campo de busca acima.</p>
+
+            <div class="search-quick-suggestions" aria-label="Termos mais procurados">
+                <span class="suggestions-label">Sugestões rápidas:</span>
+                <button type="button" class="suggestion-chip" data-query="geladeira não gela">geladeira não gela</button>
+                <button type="button" class="suggestion-chip" data-query="máquina não centrifuga">máquina não centrifuga</button>
+                <button type="button" class="suggestion-chip" data-query="desentupir pia">desentupir pia</button>
+                <button type="button" class="suggestion-chip" data-query="fechadura">fechadura</button>
+                <button type="button" class="suggestion-chip" data-query="mofo na parede">mofo na parede</button>
+                <button type="button" class="suggestion-chip" data-query="ferramentas básicas">ferramentas básicas</button>
+            </div>
+
+            <h2 class="sr-only">Resultados da pesquisa</h2>
+            <div id="search-status" class="search-status" aria-live="polite"></div>
+            <div id="search-results" class="search-results-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Conserte Agora</h3>
+                <p>O portal feito para ajudar você a entender e cuidar da manutenção básica da sua casa com clareza e segurança.</p>
+                <p style="margin-top: 0.6rem; font-size: 0.85rem;">Responsável: Francisco Gomes • CNPJ: 27.824.190/0001-18 • Cumaru do Norte - PA</p>
+            </div>
+            <div class="footer-links">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="autor.html">Equipe Editorial</a></li>
+                    <li><a href="diagnostico.html">Diagnóstico Guiado</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
+                    <li><a href="termos-de-uso.html">Termos de Uso</a></li>
+                    <li><a href="politica-de-cookies.html">Política de Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Conserte Agora • Francisco Gomes (CNPJ 27.824.190/0001-18) • Cumaru do Norte - PA.</p>
+        </div>
+    </footer>
+
+    <div class="cookie-banner" id="cookieBanner">
+        <p>Usamos cookies para melhorar sua experiência e analisar tráfego. Leia nossa <a href="politica-de-privacidade.html">Política de Privacidade</a>.</p>
+        <button class="btn btn-primary" id="acceptCookies">Aceitar Tudo</button>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const SUGGESTED_TERMS = [
+                'geladeira não gela embaixo',
+                'máquina de lavar não centrifuga',
+                'desentupir pia sem soda cáustica',
+                'fechadura agarrando',
+                'limpar mofo da parede',
+                'ferramentas básicas para casa'
+            ];
+
+            const CATEGORIES = [
+                {
+                    name: 'Consertos Domésticos',
+                    url: 'categorias/consertos-domesticos.html',
+                    desc: 'Guias sobre geladeira, máquina de lavar, fechaduras e desobstrução leve de pias.'
+                },
+                {
+                    name: 'Limpeza e Manutenção',
+                    url: 'categorias/limpeza-e-manutencao.html',
+                    desc: 'Controle de mofo superficial, proteção respiratória e conservação de paredes.'
+                },
+                {
+                    name: 'Ferramentas',
+                    url: 'categorias/ferramentas.html',
+                    desc: 'Escolha e uso seguro de ferramentas manuais básicas e equipamentos de proteção.'
+                }
+            ];
+
+            const searchForm = document.getElementById('onPageSearchForm');
+            const searchInput = document.getElementById('searchPageInput');
+            const searchError = document.getElementById('onPageSearchError');
+            const headerInput = document.querySelector('.search-bar input');
+            const statusDiv = document.getElementById('search-status');
+            const resultsDiv = document.getElementById('search-results');
+            let cachedData = null;
+
+            function loadIndex() {
+                if (cachedData) return Promise.resolve(cachedData);
+                return fetch('search.json')
+                    .then(res => {
+                        if (!res.ok) throw new Error('Falha ao carregar índice de busca');
+                        return res.json();
+                    })
+                    .then(data => {
+                        cachedData = Array.isArray(data) ? data : [];
+                        return cachedData;
+                    });
+            }
+
+            function renderCategoryLinks(container) {
+                const catSection = document.createElement('div');
+                catSection.className = 'search-categories-fallback';
+
+                const catHeading = document.createElement('h3');
+                catHeading.textContent = 'Explore por categoria';
+                catSection.appendChild(catHeading);
+
+                const grid = document.createElement('div');
+                grid.className = 'search-category-cards';
+
+                CATEGORIES.forEach(cat => {
+                    const link = document.createElement('a');
+                    link.href = cat.url;
+                    link.className = 'search-category-card';
+
+                    const title = document.createElement('strong');
+                    title.textContent = cat.name;
+
+                    const desc = document.createElement('span');
+                    desc.textContent = cat.desc;
+
+                    link.appendChild(title);
+                    link.appendChild(desc);
+                    grid.appendChild(link);
+                });
+
+                catSection.appendChild(grid);
+                container.appendChild(catSection);
+            }
+
+            function renderZeroResults(query) {
+                const recorded = window.ConserteSearch && window.ConserteSearch.recordZeroResult
+                    ? window.ConserteSearch.recordZeroResult(query)
+                    : null;
+
+                statusDiv.textContent = `Nenhum resultado encontrado para "${query}".`;
+                resultsDiv.innerHTML = '';
+
+                const box = document.createElement('div');
+                box.className = 'search-empty-state';
+
+                const msg = document.createElement('p');
+                msg.textContent = 'Ainda não temos um guia publicado especificamente sobre esse termo (ou ele não corresponde aos artigos disponíveis no momento).';
+                box.appendChild(msg);
+
+                const sugTitle = document.createElement('h3');
+                sugTitle.textContent = 'Tente buscar por um destes temas disponíveis:';
+                box.appendChild(sugTitle);
+
+                const chipGroup = document.createElement('div');
+                chipGroup.className = 'search-suggestion-list';
+
+                SUGGESTED_TERMS.forEach(term => {
+                    const btn = document.createElement('button');
+                    btn.type = 'button';
+                    btn.className = 'suggestion-chip';
+                    btn.textContent = term;
+                    btn.addEventListener('click', () => executeSearch(term, true));
+                    chipGroup.appendChild(btn);
+                });
+
+                box.appendChild(chipGroup);
+                renderCategoryLinks(box);
+
+                // Transparent note about aggregated, privacy-safe zero-result logging
+                const stats = window.ConserteSearch && window.ConserteSearch.getZeroResultStats
+                    ? window.ConserteSearch.getZeroResultStats()
+                    : [];
+
+                if (recorded || stats.length > 0) {
+                    const details = document.createElement('details');
+                    details.className = 'zero-results-log-note';
+
+                    const summary = document.createElement('summary');
+                    summary.textContent = 'Sugestão de pauta registrada de modo agregado (sem dados pessoais)';
+                    details.appendChild(summary);
+
+                    const note = document.createElement('p');
+                    note.textContent = 'Para ajudar a priorizar novos guias, buscas sem resultado são contabilizadas apenas como termo normalizado + contagem agregada local, sem coletar nome, IP, e-mail ou identificadores pessoais.';
+                    details.appendChild(note);
+
+                    if (stats.length > 0) {
+                        const list = document.createElement('ul');
+                        list.className = 'zero-results-stats-list';
+                        stats.slice(0, 8).forEach(entry => {
+                            const li = document.createElement('li');
+                            li.textContent = `${entry.term} (${entry.count} ${entry.count === 1 ? 'busca' : 'buscas'})`;
+                            list.appendChild(li);
+                        });
+                        details.appendChild(list);
+                    }
+
+                    box.appendChild(details);
+                }
+
+                resultsDiv.appendChild(box);
+            }
+
+            function renderResultsList(query, results) {
+                const countText = results.length === 1
+                    ? `1 resultado encontrado para "${query}":`
+                    : `${results.length} resultados encontrados para "${query}":`;
+                statusDiv.textContent = countText;
+                resultsDiv.innerHTML = '';
+
+                const ul = document.createElement('ul');
+                ul.className = 'search-results-list';
+
+                results.forEach(item => {
+                    const li = document.createElement('li');
+                    li.className = 'search-result-card';
+
+                    const metaRow = document.createElement('div');
+                    metaRow.className = 'search-result-meta';
+
+                    if (item.category) {
+                        const catBadge = document.createElement('a');
+                        catBadge.className = 'category-tag';
+                        catBadge.href = item.categoryUrl || '#';
+                        catBadge.textContent = item.category;
+                        metaRow.appendChild(catBadge);
+                    }
+
+                    const typeBadge = document.createElement('span');
+                    typeBadge.className = 'search-result-type';
+                    typeBadge.textContent = item.type === 'categoria' ? 'Página de categoria' : 'Guia passo a passo';
+                    metaRow.appendChild(typeBadge);
+
+                    li.appendChild(metaRow);
+
+                    const titleH2 = document.createElement('h2');
+                    titleH2.className = 'search-result-title';
+                    const titleLink = document.createElement('a');
+                    titleLink.href = item.url;
+                    titleLink.textContent = item.title;
+                    titleH2.appendChild(titleLink);
+                    li.appendChild(titleH2);
+
+                    const descP = document.createElement('p');
+                    descP.className = 'search-result-desc';
+                    descP.textContent = item.desc;
+                    li.appendChild(descP);
+
+                    ul.appendChild(li);
+                });
+
+                resultsDiv.appendChild(ul);
+            }
+
+            function renderInitialState() {
+                statusDiv.textContent = 'Digite um termo acima ou escolha uma categoria abaixo para começar.';
+                resultsDiv.innerHTML = '';
+                const wrapper = document.createElement('div');
+                wrapper.className = 'search-empty-state';
+                renderCategoryLinks(wrapper);
+                resultsDiv.appendChild(wrapper);
+            }
+
+            function executeSearch(rawQuery, updateHistory) {
+                const query = (rawQuery || '').trim();
+                searchInput.value = query;
+                if (headerInput) headerInput.value = query;
+
+                if (updateHistory && window.history && window.history.replaceState) {
+                    const newUrl = query
+                        ? `${window.location.pathname}?q=${encodeURIComponent(query)}`
+                        : window.location.pathname;
+                    window.history.replaceState(null, '', newUrl);
+                }
+
+                if (!query) {
+                    renderInitialState();
                     return;
                 }
-                
-                let html = '<ul style="list-style: none; padding: 0;">';
-                results.forEach(item => {
-                    html += `<li style="margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid #eee;">
-                        <a href="${item.url}" style="font-size: 1.2rem; font-weight: bold; color: var(--primary-color);">${item.title}</a>
-                        <p style="color: var(--light-text); margin-top: 0.5rem;">${item.desc}</p>
-                    </li>`;
-                });
-                html += '</ul>';
-                resultsDiv.innerHTML = html;
-            });
-    });
-</script>
 
-    </main>
-    <script src="js/main.js"></script>
+                statusDiv.textContent = 'Buscando...';
+                loadIndex()
+                    .then(data => {
+                        const results = window.ConserteSearch.searchItems(data, query);
+                        if (results.length === 0) {
+                            renderZeroResults(query);
+                        } else {
+                            renderResultsList(query, results);
+                        }
+                    })
+                    .catch(() => {
+                        statusDiv.textContent = 'Não foi possível carregar o índice de busca no momento.';
+                        resultsDiv.innerHTML = '';
+                        const fallback = document.createElement('div');
+                        fallback.className = 'search-empty-state';
+                        renderCategoryLinks(fallback);
+                        resultsDiv.appendChild(fallback);
+                    });
+            }
+
+            searchInput.addEventListener('input', () => {
+                if (searchInput.value.trim() && searchError) {
+                    searchError.hidden = true;
+                    searchInput.removeAttribute('aria-invalid');
+                }
+            });
+
+            searchForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                if (!searchInput.value.trim()) {
+                    if (searchError) searchError.hidden = false;
+                    searchInput.setAttribute('aria-invalid', 'true');
+                    searchInput.focus();
+                    return;
+                }
+                if (searchError) searchError.hidden = true;
+                searchInput.removeAttribute('aria-invalid');
+                executeSearch(searchInput.value, true);
+            });
+
+            document.querySelectorAll('.search-quick-suggestions .suggestion-chip').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const q = btn.getAttribute('data-query') || btn.textContent;
+                    executeSearch(q, true);
+                });
+            });
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const initialQuery = urlParams.get('q') || '';
+            executeSearch(initialQuery, false);
+        });
+    </script>
 </body>
 </html>
