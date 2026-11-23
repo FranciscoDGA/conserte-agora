@@ -18,6 +18,7 @@ Portal brasileiro de manutenção doméstica básica com foco em segurança para
 
 ## Guias Revisados
 
+- [Disjuntor desarmando sozinho: o que fazer, causas e como resolver com segurança](https://conserte-agora.vercel.app/artigos/como-consertar-disjuntor-desarmando-sozinho-causas-e-solucoes.html): Teste prático de isolamento sem risco para identificar sobrecarga vs. curto-circuito e quando chamar eletricista.
 - [Caixa acoplada vazando água no vaso: como identificar a causa e regular com segurança](https://conserte-agora.vercel.app/artigos/como-consertar-caixa-acoplada-vazando-agua-no-vaso.html): Identificação de transbordamento pelo ladrão vs. obturador gasto, regulagem da boia e higiene sanitária.
 - [Torneira pingando: como identificar a causa e trocar o vedante com segurança](https://conserte-agora.vercel.app/artigos/como-consertar-torneira-pingando-trocar-vedante-ou-reparo.html): Como trocar a carrapeta de borracha ou o reparo cerâmico 1/4 de volta sem danificar a rosca nem o acabamento.
 - [Ventilador fraco, travando ou fazendo barulho: como limpar as peças e o eixo com segurança](https://conserte-agora.vercel.app/artigos/como-limpar-ventilador-fraco-ou-barulhento-com-seguranca.html): Desmontagem segura da grade fora da tomada, remoção de cabelos no eixo do motor e lavagem correta das hélices.
